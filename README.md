@@ -4,6 +4,7 @@ Một trang danh mục sách responsive, xây bằng HTML và CSS thuần, lấy
 
 ## Xem thử
 
+- Báo cáo Word: [BaoCao_BaiTap_CaNhan_Chuong1.docx](BaoCao_BaiTap_CaNhan_Chuong1.docx)
 - [Mở bản đang triển khai trên GitHub Pages](https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/)
 - [Repository GitHub](https://github.com/nhhoang782006-dotcom/ecommerce-ui-improvement)
 - Mở `index.html` trực tiếp trong trình duyệt, hoặc chạy một static server trong thư mục này (ví dụ: `python -m http.server 8000`) rồi truy cập `http://localhost:8000`.
