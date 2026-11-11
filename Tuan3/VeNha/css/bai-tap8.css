@@ -1,0 +1,27 @@
+*{box-sizing:border-box}
+:root{--ink:#17343d;--muted:#5c7374;--teal:#167b71;--gold:#efc875}
+body{margin:0;background:#eaf0eb;color:var(--ink);font:14px/1.6 Arial,sans-serif}
+.css1-wrapper{width:min(960px,100%);margin:34px auto;background:#fff;box-shadow:0 20px 55px #173b3515;overflow:hidden}
+.css1-header{padding:20px 52px 34px;border-bottom:1px solid #e1e9e3}
+.back-link{display:inline-block;color:var(--teal);font-size:12px;font-weight:700;text-decoration:none;margin-bottom:25px}
+.eyebrow{font-size:9px;letter-spacing:.2em;color:var(--teal);font-weight:700;margin:0 0 10px}
+.css1-header h1{font:700 clamp(34px,5vw,50px)/1.1 Georgia,serif;letter-spacing:-.025em;margin:0}
+.css1-header h1 i{font-size:.66em;color:#bf7958;vertical-align:middle}
+.intro-copy{max-width:690px;color:var(--muted);font-size:13px;line-height:1.8;margin:17px 0 0}
+.intro-copy i{color:#3d9e92;margin-right:4px}
+.intro-copy strong{color:var(--ink)}
+.hero-section{padding:28px 32px 42px}
+.remark{font:700 17px Georgia,serif;margin:0 0 17px}
+.hero-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.hero-card{position:relative;min-height:335px;border-radius:5px;overflow:hidden;background:#193f49;color:#fff;isolation:isolate}
+.hero-card img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.hero-card::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#092b3210 15%,#092b3275 48%,#09272eef 100%)}
+.hero-card:hover img{transform:scale(1.04)}
+.card-copy{position:absolute;left:20px;right:20px;bottom:18px}
+.card-copy span{font-size:8px;letter-spacing:.15em;color:var(--gold);font-weight:700}
+.card-copy h2{font:700 20px/1.2 Georgia,serif;margin:6px 0 8px}
+.card-copy p{font-size:11px;line-height:1.6;color:#e0e8e5;margin:0}
+.card-copy strong{color:#fff}
+.css1-wrapper footer{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 32px;background:#163943;color:#c4d4ce;font-size:10px}
+.css1-wrapper footer a{color:var(--gold);text-decoration:none;font-weight:700}
+@media(max-width:640px){.css1-wrapper{margin:0;min-height:100vh}.css1-header{padding:20px 20px 29px}.back-link{margin-bottom:22px}.hero-section{padding:24px 18px 32px}.hero-grid{grid-template-columns:1fr}.hero-card{min-height:310px}.css1-wrapper footer{padding:16px 18px;flex-wrap:wrap}}

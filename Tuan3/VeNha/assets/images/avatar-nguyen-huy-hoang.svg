@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Avatar Nguyễn Huy Hoàng</title><desc id="desc">Chữ NH trên nền xanh teal.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#167f79"/><stop offset="1" stop-color="#102f3c"/></linearGradient></defs>
+  <circle cx="160" cy="160" r="154" fill="url(#bg)"/>
+  <circle cx="160" cy="160" r="130" fill="none" stroke="#d6f2e8" stroke-opacity=".32" stroke-width="2"/>
+  <text x="160" y="183" text-anchor="middle" fill="#f3fbf7" font-family="Georgia,serif" font-size="94" font-weight="700" letter-spacing="-7">NH</text>
+  <path d="M82 217h156" stroke="#f3c978" stroke-linecap="round" stroke-width="4"/>
+</svg>

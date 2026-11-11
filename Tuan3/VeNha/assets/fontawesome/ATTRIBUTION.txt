@@ -1,0 +1,15 @@
+Font Awesome Free 7.0.1
+https://fontawesome.com
+
+Font Awesome Free icons are licensed under CC BY 4.0.
+Font files are licensed under SIL OFL 1.1.
+CSS code is licensed under MIT.
+
+Files included for this exercise:
+- css/fontawesome.min.css
+- css/solid.min.css
+- css/brands.min.css
+- webfonts/fa-solid-900.woff2
+- webfonts/fa-brands-400.woff2
+
+Source: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/

@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Nguyễn Huy Hoàng"><title>Bài 7 · Wrapper Layout | Nguyễn Huy Hoàng</title><link rel="stylesheet" href="css/bai-tap7.css"></head>
+<body>
+  <div class="wrapper">
+    <header class="layout-header"><a href="index.html" class="brand-mark" aria-label="Nguyễn Huy Hoàng">NH<span>.</span></a><div><p class="eyebrow">BÀI 07 · PAGE STRUCTURE</p><h1>Ghi chú CSS của Nguyễn Huy Hoàng</h1></div><span class="issue-label">CSS BASICS · NO. 03</span></header>
+    <nav class="side-nav" aria-label="Điều hướng ghi chú"><p class="nav-label">NỘI DUNG</p><a class="selected" href="#overview">Tổng quan</a><a href="#selectors">Selector</a><a href="#layout">Bố cục</a><a href="#resources">Tài nguyên</a></nav>
+    <main class="main-content"><article><p class="eyebrow">GHI CHÚ HỌC TẬP</p><h2 id="overview">Một trang được chia thành những vùng rõ ràng</h2><p class="intro-text">Wrapper gom toàn bộ nội dung vào cùng một khung. Header mở đầu trang, nav đặt bên trái, main chứa nội dung chính và footer khép lại trang.</p><div class="callout"><span>01</span><p>Dùng semantic HTML để mỗi vùng có vai trò riêng, rồi CSS sắp chúng thành hai cột linh hoạt.</p></div><h3 id="selectors">Các phần tử trong wrapper</h3><ul class="structure-list"><li><code>&lt;header&gt;</code><span>Tiêu đề và thông tin trang</span></li><li><code>&lt;nav&gt;</code><span>Các liên kết điều hướng</span></li><li><code>&lt;main&gt;</code><span>Nội dung chính của trang</span></li><li><code>&lt;footer&gt;</code><span>Thông tin kết thúc</span></li></ul><h3 id="layout">Bố cục chính</h3><p>Trên desktop, nav rộng một phần tư, main chiếm phần còn lại. Trên điện thoại, hai vùng xếp theo chiều dọc.</p></article><aside class="side-note" id="resources"><span class="side-note-mark">✳</span><h3>CSS tip</h3><p><code>display: grid</code> giúp tạo wrapper hai cột mà vẫn dễ chuyển sang một cột bằng media query.</p><a href="BaiTap6.html">Xem bài lưới ảnh →</a></aside></main>
+    <footer class="layout-footer"><span>Nguyễn Huy Hoàng · 31241026670</span><a href="index.html">Mục lục bài tập</a></footer>
+  </div>
+</body>
+</html>
