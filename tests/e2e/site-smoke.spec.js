@@ -12,6 +12,7 @@ async function inspectAllPages(page, width, height) {
   const base = new URL(process.env.E2E_BASE_URL || "http://127.0.0.1:4173/ecommerce-ui-improvement/JavaScript-Labs/");
   const basePath = base.pathname;
   const repositoryPath = `/${base.pathname.split("/")[1]}/`;
+  const verifiedLinkTargets = new Set();
 
   for (const route of pageRoutes) {
     const pageErrors = [];
@@ -70,8 +71,10 @@ async function inspectAllPages(page, width, height) {
     }, { origin: base.origin, basePath });
     expect(linkAudit.outsideBase, `${route} links outside the repository's Pages subpath`).toEqual([]);
     for (const href of [...new Set(linkAudit.inBase)]) {
+      if (verifiedLinkTargets.has(href)) continue;
       const linkResponse = await page.request.get(href);
       expect(linkResponse.status(), `broken same-origin link: ${href}`).toBe(200);
+      verifiedLinkTargets.add(href);
     }
 
     expect(pageErrors, `${route} raised an unhandled JavaScript error`).toEqual([]);

@@ -1,11 +1,11 @@
 # Local E2E Report
 
-**Result:** PASS — 40 passed, 0 failed
-**Command:** `npm run test:e2e`
-**Run window:** 17 Nov 2026, 18:36:28–18:38:55 (Asia/Ho_Chi_Minh)
-**Duration:** 2.5 minutes
-**Environment:** Windows, Node.js 24.18.0, Playwright 1.65.1, headless Microsoft Edge 157.0.0.0
-**Base URL:** `http://127.0.0.1:4173/ecommerce-ui-improvement/JavaScript-Labs/`
+- **Result:** PASS — 40 passed, 0 failed
+- **Command:** `npm run test:e2e`
+- **Run window:** 17 Nov 2026, 18:48:32–18:49:41 (Asia/Ho_Chi_Minh)
+- **Duration:** 1.2 minutes
+- **Environment:** Windows, Node.js 24.18.0, Playwright 1.65.1, headless Microsoft Edge 157.0.0.0
+- **Base URL:** `http://127.0.0.1:4173/ecommerce-ui-improvement/JavaScript-Labs/`
 
 ## Coverage
 
@@ -14,6 +14,7 @@
 - All 8 Lab09 requirements passed, including DOM node traversal, add/remove interactions, event handling, the deliberate error demonstration, and form validation with malformed email rejection.
 - All 13 Lab10 cases passed, including CDN-blocked local jQuery fallback, selectors, event cleanup, effects, chained animation, a successful `$.get()` against the configured HTTPS API, and jqXHR loading, failure, retry, concurrency, and timeout behavior.
 - The three lab indexes passed filtering by exercise number and topic. The student identity, course code, and mobile touch-target checks also passed.
+- Same-origin link targets were checked once per URL during each 33-page viewport scan; every route was also opened directly at each viewport.
 
 ## Test Harness Finding
 
