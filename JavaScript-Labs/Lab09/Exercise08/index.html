@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bài thực hành 9.8: Kiểm tra biểu mẫu trước khi gửi trong khóa JavaScript Labs.">
+  <title>9.8 · Kiểm tra biểu mẫu trước khi gửi | JavaScript Labs</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+  <link rel="stylesheet" href="../lab09.css">
+  <script defer src="../../assets/site.js"></script>
+  <script defer src="script.js"></script>
+
+</head>
+<body class="lab09"><a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>JavaScript <strong>Labs</strong></span></a>
+    <nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html" aria-current="page">Lab 09</a></nav>
+  </header>
+  <main id="main-content" class="page-wrap" data-exercise="9-8">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab 09</a><span aria-hidden="true">/</span><span aria-current="page">Bài 9.8</span></nav>
+    <section class="lesson-intro">
+      <p class="eyebrow">LAB 09 <span aria-hidden="true">/</span> BÀI 9.8</p>
+      <h1 class="page-title">Kiểm tra biểu mẫu trước khi gửi</h1>
+      <p class="lead">Ngăn gửi khi còn thiếu thông tin, thông báo trường cần bổ sung và hiển thị lỗi ngay dưới biểu mẫu.</p>
+      <nav class="lab-nav" aria-label="Thông tin bài học"><a href="../index.html">← Tổng quan Lab 09</a><span>Thực hành tương tác · SUBMIT · PREVENT DEFAULT · VALIDATION</span></nav>
+      <nav class="exercise-nav" aria-label="Chuyển bài"><a href="../Exercise07/index.html">← Bài 07</a><span>BÀI 08 / 08</span><a href="../index.html">Tổng quan Lab 09 →</a></nav>
+    </section>
+    <section class="demo-card lesson-demo" id="demo-9-8" data-testid="lab09-ex08-demo" aria-labelledby="demo-heading-8">
+      <div class="demo-card-header"><div><p class="eyebrow">THỬ NGAY TRÊN TRANG</p><h2 id="demo-heading-8">Phòng thực hành</h2></div><span class="topic-tag">SUBMIT · PREVENT DEFAULT · VALIDATION</span></div>
+      <form id="contact-form" class="form-demo" novalidate>
+  <div class="form-fields">
+    <div class="field-group">
+      <label for="contact-name">Họ và tên <span aria-hidden="true">*</span></label>
+      <input id="contact-name" name="name" type="text" autocomplete="name" required data-testid="lab09-ex08-name-input">
+    </div>
+    <div class="field-group">
+      <label for="contact-email">Email <span aria-hidden="true">*</span></label>
+      <input id="contact-email" name="email" type="email" autocomplete="email" required data-testid="lab09-ex08-email-input">
+    </div>
+  </div>
+  <button class="button" type="submit" data-testid="lab09-ex08-submit-button">Kiểm tra thông tin</button>
+  <div id="form-errors" class="error-box" role="alert" aria-live="assertive" data-testid="lab09-ex08-output"></div>
+  <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
+</form>
+    </section>
+    <details class="code-panel">
+      <summary><span>Đọc mã nguồn</span><span class="summary-hint">Ví dụ ngắn, có chú thích</span></summary>
+      <pre><code>form.addEventListener("submit", (event) =&gt; {
+  event.preventDefault();
+  const missing = requiredFields.filter((field) =&gt; !field.value.trim());
+  if (missing.length) {
+    alert("Vui lòng điền các trường còn thiếu.");
+    showErrors(missing);
+  }
+});</code></pre>
+    </details>
+  </main>
+  <footer class="site-footer"><span>JavaScript Labs <span aria-hidden="true">·</span> Lab 09</span><a href="../index.html">Trở lại danh sách bài học ↑</a></footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Sự kiện chuột</title>
+  <desc id="desc">Minh họa một con trỏ trên bảng điều khiển có ba nút màu.</desc>
+  <rect width="640" height="360" rx="28" fill="#eaf3ef"/>
+  <circle cx="510" cy="70" r="110" fill="#d6ebe2"/>
+  <rect x="94" y="70" width="452" height="232" rx="20" fill="#fffdf8" stroke="#c8d9d2" stroke-width="3"/>
+  <rect x="94" y="70" width="452" height="48" rx="20" fill="#24463d"/>
+  <circle cx="123" cy="94" r="6" fill="#ef9278"/><circle cx="145" cy="94" r="6" fill="#e8c56d"/><circle cx="167" cy="94" r="6" fill="#87c6aa"/>
+  <rect x="128" y="147" width="158" height="113" rx="14" fill="#f1d7cb"/>
+  <rect x="304" y="147" width="205" height="17" rx="8" fill="#dbe7e2"/><rect x="304" y="177" width="167" height="13" rx="6" fill="#e8eee9"/><rect x="304" y="204" width="187" height="13" rx="6" fill="#e8eee9"/>
+  <rect x="304" y="234" width="96" height="30" rx="15" fill="#368c78"/>
+  <path d="M245 202 226 278l25-17 15 31 12-6-16-30 31-2z" fill="#fdfcf8" stroke="#24463d" stroke-width="5" stroke-linejoin="round"/>
+</svg>

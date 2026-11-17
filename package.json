@@ -1,0 +1,15 @@
+{
+  "name": "javascript-labs-coursework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright E2E checks for the static JavaScript Labs coursework site",
+  "scripts": {
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "jquery": "^3.7.1"
+  }
+}

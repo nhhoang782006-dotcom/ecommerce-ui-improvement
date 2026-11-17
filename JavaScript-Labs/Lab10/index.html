@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mười bài thực hành jQuery với ví dụ tương tác, giải thích và mã nguồn ngắn gọn.">
+  <title>Lab 10 · jQuery | Xưởng JavaScript</title>
+  <link rel="stylesheet" href="../assets/site.css"><link rel="stylesheet" href="lab10.css">
+  <script defer src="../assets/site.js"></script>
+</head>
+<body><a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="Xưởng JavaScript, trang tổng quan"><span class="brand-mark" aria-hidden="true">JS</span><span>Xưởng JavaScript</span></a>
+    <nav class="top-nav" aria-label="Điều hướng chính"><a href="../index.html">Tổng quan</a><a href="index.html" aria-current="page">Lab 10 · jQuery</a></nav>
+  </header>
+  <main id="main-content" class="page-wrap">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../index.html">JavaScript Labs</a><span aria-hidden="true">/</span><span>Lab 10 · jQuery</span></nav>
+    <section class="lab10-hero">
+      <div><p class="lab10-kicker">Lab 10 · thư viện jQuery</p><h1>Thử nhanh, nhìn rõ từng thay đổi.</h1>
+        <p class="lead">Mười ví dụ nhỏ đi từ cách nạp thư viện, chọn phần tử và xử lý sự kiện đến hiệu ứng, hoạt ảnh và yêu cầu dữ liệu bất đồng bộ.</p>
+        <div class="lab10-controls"><a class="lab10-button" href="Exercise01/index.html">Bắt đầu từ bài 10.1</a><a class="lab10-button is-secondary" href="../index.html">Về danh sách lab</a></div>
+      </div>
+      <aside class="lab10-hero-card"><strong>Thực hành bằng tương tác trực tiếp</strong><p>Thay đổi trong mỗi ví dụ chỉ tác động lên khung demo của bài đó. Các bài API hiển thị dữ liệu nhận được hoặc thông báo lỗi thật từ mạng.</p><span class="lab10-state-pill">HTML · CSS · jQuery 3.7.1</span></aside>
+    </section>
+    <nav class="lab-nav" aria-label="Các lab"><a href="../Lab08/index.html">Lab 08</a><a href="../Lab09/index.html">Lab 09</a><a href="index.html" aria-current="page">Lab 10</a></nav>
+    <section aria-labelledby="exercise-list-title"><div class="lab10-page-intro"><p class="eyebrow">Lộ trình bài học</p><h2 id="exercise-list-title">Chọn một nội dung để thực hành</h2></div>
+      <div class="filter-bar">
+        <label for="lab10-search">Tìm theo số bài hoặc chủ đề<input id="lab10-search" type="search" data-filter-target="#lab10-exercise-list" data-filter-status="#lab10-search-status" placeholder="Ví dụ: 10.9, Ajax, hoạt ảnh" autocomplete="off"></label>
+        <p id="lab10-search-status" class="filter-status" role="status" aria-live="polite"></p>
+      </div>
+      <div class="lab10-index-grid" id="lab10-exercise-list">
+        <a class="lab10-exercise-card" href="Exercise01/index.html" data-filter-item data-search-text="10.1 jquery cdn fallback"><span class="lab10-number">01</span><span><h2>Nạp jQuery và dự phòng</h2><p>CDN, bản cục bộ và kiểm tra phiên bản đang chạy.</p><span class="lab10-topic">Thiết lập</span></span></a>
+        <a class="lab10-exercise-card" href="Exercise02/index.html" data-filter-item data-search-text="10.2 selectors dom"><span class="lab10-number">02</span><span><h2>Chọn phần tử, cập nhật nội dung</h2><p>Thực hành val, html, attr, css và addClass.</p><span class="lab10-topic">Selectors · DOM</span></span></a>
+        <a class="lab10-exercise-card" href="Exercise03/index.html" data-filter-item data-search-text="10.3 selectors password"><span class="lab10-number">03</span><span><h2>Bộ chọn thuộc tính và vị trí</h2><p>Lọc trường mật khẩu, phần tử thứ n và văn bản phù hợp.</p><span class="lab10-topic">Selectors</span></span></a>
+        <a class="lab10-exercise-card" href="Exercise04/index.html" data-filter-item data-search-text="10.4 events mouse ready"><span class="lab10-number">04</span><span><h2>Sẵn sàng và sự kiện chuột</h2><p>Dùng ready, on, off, theo dõi vị trí và kết thúc tương tác.</p><span class="lab10-topic">Events · DOM</span></span></a>
+        <a class="lab10-exercise-card" href="Exercise05/index.html" data-filter-item data-search-text="10.5 dom append prepend"><span class="lab10-number">05</span><span><h2>Chèn nội dung vào DOM</h2><p>So sánh bảy phương thức thêm phần tử trước, sau và vào danh sách.</p><span class="lab10-topic">DOM</span></span></a>
+        <a class="lab10-exercise-card" href="Exercise06/index.html" data-filter-item data-search-text="10.6 effects fade slide"><span class="lab10-number">06</span><span><h2>Hiệu ứng ẩn hiện</h2><p>Thử nhóm fade và slide với điều khiển riêng.</p><span class="lab10-topic">Effects</span></span></a>
+        <a class="lab10-exercise-card" href="Exercise07/index.html" data-filter-item data-search-text="10.7 events ui image preview"><span class="lab10-number">07</span><span><h2>Xem trước ảnh theo con trỏ</h2><p>Đưa ảnh phóng lớn đi cùng con trỏ; dùng bàn phím hoặc chạm để chọn.</p><span class="lab10-topic">Events · UI</span></span></a>
+        <a class="lab10-exercise-card" href="Exercise08/index.html" data-filter-item data-search-text="10.8 animation animate"><span class="lab10-number">08</span><span><h2>Hoạt ảnh nối tiếp</h2><p>Di chuyển, đổi độ mờ và kích thước theo chuỗi animate.</p><span class="lab10-topic">Animation</span></span></a>
+        <a class="lab10-exercise-card" href="Exercise09/index.html" data-filter-item data-search-text="10.9 ajax api cities get"><span class="lab10-number">09</span><span><h2>Tải dữ liệu thành phố</h2><p>Gọi API HTTPS bằng $.get và kiểm tra dữ liệu trả về.</p><span class="lab10-topic">Ajax · API</span></span></a>
+        <a class="lab10-exercise-card" href="Exercise10/index.html" data-filter-item data-search-text="10.10 ajax jqxhr loading timeout retry"><span class="lab10-number">10</span><span><h2>Xử lý trạng thái jqXHR</h2><p>Loading, thành công, lỗi, timeout và thử lại an toàn.</p><span class="lab10-topic">Ajax · jqXHR</span></span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="page-wrap"><p>Xưởng JavaScript · Bài thực hành độc lập, không cần framework.</p></div></footer>
+</body>
+</html>

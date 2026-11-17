@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thực hành nhận biết trạng thái bật và tắt JavaScript trên trình duyệt.">
+  <title>8.1 · Bật và tắt JavaScript</title>
+  <link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header"><a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>Learning log <small>2026 · TMĐT</small></span></a><nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html">Lab08</a></nav></header>
+  <main id="main-content" class="page-wrap" data-exercise="8-1">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab08</a><span aria-hidden="true">/</span><span>8.1</span></nav>
+    <p class="eyebrow">BÀI 8.1 · TRẠNG THÁI TRÌNH DUYỆT</p><h1 class="page-title">Bật và tắt JavaScript</h1>
+    <p class="lead">Trang web có thể phản ứng khi JavaScript được bật. Khi tắt JavaScript trong trình duyệt, nội dung HTML vẫn còn và phần hướng dẫn dự phòng sẽ xuất hiện.</p>
+    <nav class="lab-nav" aria-label="Điều hướng phòng lab"><a href="../index.html">← Danh sách Lab08</a><span>Thực hành trình duyệt</span></nav>
+    <nav class="exercise-nav" aria-label="Điều hướng bài tập"><a href="../index.html">Tất cả bài</a><a href="../Exercise02/index.html">Bài tiếp theo: 8.2 →</a></nav>
+    <section class="demo-card" aria-labelledby="status-title">
+      <p class="eyebrow">KIỂM TRA THỰC TẾ</p><h2 id="status-title">JavaScript đang hoạt động?</h2>
+      <p id="js-status" class="demo-output" data-testid="js-status" aria-live="polite">Đang chờ script chạy…</p>
+      <noscript><p class="demo-output">JavaScript hiện đang tắt hoặc không được hỗ trợ. Hãy bật lại trong cài đặt trình duyệt rồi tải lại trang để xem trạng thái hoạt động.</p></noscript>
+      <h3>Thử hai trạng thái</h3>
+      <ol><li>Trạng thái bật: tải lại trang và đọc trạng thái phía trên.</li><li>Trạng thái tắt: mở cài đặt JavaScript của trình duyệt, chặn script cho trang này rồi tải lại. Bật lại cài đặt và tải lại để xem trạng thái ban đầu. Trên Edge, trang cài đặt là <code>edge://settings/content/javascript</code>; tên mục có thể khác ở trình duyệt khác.</li></ol>
+      <button type="button" id="check-again" data-testid="check-js">Kiểm tra lại</button>
+      <a href="edge://settings/content/javascript">Mở cài đặt JavaScript trên Edge ↗</a>
+    </section>
+    <section class="code-panel" aria-label="Ghi chú mã nguồn"><h2>Điều cần nhớ</h2><p>HTML cung cấp nội dung nền. JavaScript bổ sung hành vi; thẻ <code>&lt;noscript&gt;</code> cung cấp lời nhắn khi script không chạy.</p></section>
+  </main>
+  <footer class="site-footer"><p>Lab08 · Bài 8.1</p><p><a href="../index.html">Về danh sách bài tập</a></p></footer>
+</body>
+</html>

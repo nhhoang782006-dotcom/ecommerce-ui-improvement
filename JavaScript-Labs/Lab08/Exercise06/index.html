@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Khám phá String primitive, đối tượng String, Date và các phép tính Math trong JavaScript.">
+  <title>8.6 · String, Date và Math</title>
+  <link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script><script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header"><a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>Learning log <small>2026 · TMĐT</small></span></a><nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html">Lab08</a></nav></header>
+  <main id="main-content" class="page-wrap" data-exercise="8-6">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab08</a><span aria-hidden="true">/</span><span>8.6</span></nav>
+    <p class="eyebrow">BÀI 8.6 · KIỂU DỮ LIỆU VÀ TOÁN HỌC</p><h1 class="page-title">String, Date và Math</h1>
+    <p class="lead">So sánh chuỗi nguyên thủy với đối tượng String, dùng <code>==</code> và <code>===</code>, rồi xem các tiện ích tích hợp sẵn của JavaScript.</p>
+    <nav class="lab-nav" aria-label="Điều hướng phòng lab"><a href="../index.html">← Danh sách Lab08</a><span>Kiểu dữ liệu và đối tượng tích hợp</span></nav>
+    <nav class="exercise-nav" aria-label="Điều hướng bài tập"><a href="../Exercise05/index.html">← Bài 8.5</a><a href="../Exercise07/index.html">Bài tiếp theo: 8.7 →</a></nav>
+    <section class="demo-card" aria-labelledby="types-title">
+      <p class="eyebrow">KẾT QUẢ SO SÁNH</p><h2 id="types-title">Primitive và object</h2>
+      <div id="type-output" class="demo-output" data-testid="type-output" aria-live="polite"></div>
+    </section>
+    <section class="demo-card" aria-labelledby="date-title">
+      <p class="eyebrow">DATE VÀ MATH</p><h2 id="date-title">Giá trị được tính khi chạy</h2>
+      <div id="math-output" class="demo-output" data-testid="math-output" aria-live="polite"></div>
+      <p><button type="button" id="random-button" data-testid="random-button">Tạo số ngẫu nhiên mới</button><button type="button" id="date-button" data-testid="date-button">Cập nhật thời gian</button></p>
+      <p id="random-result" class="demo-output" data-testid="random-output" aria-live="polite">Số ngẫu nhiên từ 0 đến nhỏ hơn 1 sẽ hiện tại đây.</p>
+    </section>
+    <section class="code-panel"><h2>Ghi nhớ</h2><p><code>new String()</code> tạo một object, vì vậy <code>typeof</code> trả về <code>"object"</code>. Thường nên dùng chuỗi nguyên thủy. <code>Math.random()</code> tạo số trong khoảng từ 0 đến nhỏ hơn 1.</p></section>
+  </main>
+  <footer class="site-footer"><p>Lab08 · Bài 8.6</p><p><a href="../index.html">Về danh sách bài tập</a></p></footer>
+</body>
+</html>

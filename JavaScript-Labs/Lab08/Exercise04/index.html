@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thực hành thông báo dự phòng với noscript khi JavaScript không chạy.">
+  <title>8.4 · Thẻ noscript</title>
+  <link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script><script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header"><a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>Learning log <small>2026 · TMĐT</small></span></a><nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html">Lab08</a></nav></header>
+  <main id="main-content" class="page-wrap" data-exercise="8-4">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab08</a><span aria-hidden="true">/</span><span>8.4</span></nav>
+    <p class="eyebrow">BÀI 8.4 · DỰ PHÒNG KHÔNG SCRIPT</p><h1 class="page-title">Thông điệp với noscript</h1>
+    <p class="lead">Thẻ <code>&lt;noscript&gt;</code> cho phép trang giải thích điều gì đang xảy ra nếu trình duyệt tắt JavaScript hoặc không hỗ trợ script.</p>
+    <nav class="lab-nav" aria-label="Điều hướng phòng lab"><a href="../index.html">← Danh sách Lab08</a><span>HTML dự phòng</span></nav>
+    <nav class="exercise-nav" aria-label="Điều hướng bài tập"><a href="../Exercise03/index.html">← Bài 8.3</a><a href="../Exercise05/index.html">Bài tiếp theo: 8.5 →</a></nav>
+    <section class="demo-card" aria-labelledby="noscript-title">
+      <p class="eyebrow">THÔNG BÁO TRẠNG THÁI</p><h2 id="noscript-title">Trạng thái hỗ trợ</h2>
+      <p id="script-ready" class="demo-output" data-testid="script-status" aria-live="polite">Đang kiểm tra khả năng chạy JavaScript…</p>
+      <noscript><p class="demo-output" data-testid="noscript-message">JavaScript đang tắt. Nội dung bài học vẫn xem được; hãy bật JavaScript và tải lại nếu muốn chạy các ví dụ tương tác.</p></noscript>
+      <p>Để kiểm tra thông báo dự phòng, hãy tắt JavaScript bằng cài đặt hoặc tiện ích của trình duyệt rồi tải lại trang. Thẻ <code>noscript</code> được xử lý bởi trình duyệt; JavaScript không thể tự tắt chính nó để mô phỏng trạng thái này.</p>
+    </section>
+    <section class="code-panel"><h2>Vì sao cần dự phòng?</h2><p>Thông báo dự phòng làm rõ giới hạn tính năng cho người đọc. Hãy giữ thông tin quan trọng ở HTML thay vì chỉ tạo nó bằng JavaScript.</p></section>
+  </main>
+  <footer class="site-footer"><p>Lab08 · Bài 8.4</p><p><a href="../index.html">Về danh sách bài tập</a></p></footer>
+</body>
+</html>

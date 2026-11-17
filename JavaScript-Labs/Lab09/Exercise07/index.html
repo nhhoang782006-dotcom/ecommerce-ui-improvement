@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bài thực hành 9.7: Đổi màu khi focus và blur trong khóa JavaScript Labs.">
+  <title>9.7 · Đổi màu khi focus và blur | JavaScript Labs</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+  <link rel="stylesheet" href="../lab09.css">
+  <script defer src="../../assets/site.js"></script>
+  <script defer src="script.js"></script>
+
+</head>
+<body class="lab09"><a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>JavaScript <strong>Labs</strong></span></a>
+    <nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html" aria-current="page">Lab 09</a></nav>
+  </header>
+  <main id="main-content" class="page-wrap" data-exercise="9-7">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab 09</a><span aria-hidden="true">/</span><span aria-current="page">Bài 9.7</span></nav>
+    <section class="lesson-intro">
+      <p class="eyebrow">LAB 09 <span aria-hidden="true">/</span> BÀI 9.7</p>
+      <h1 class="page-title">Đổi màu khi focus và blur</h1>
+      <p class="lead">Theo dõi focus và blur trên ô văn bản cùng ô mật khẩu; nền vàng báo đang nhập, nền trắng báo đã rời ô.</p>
+      <nav class="lab-nav" aria-label="Thông tin bài học"><a href="../index.html">← Tổng quan Lab 09</a><span>Thực hành tương tác · FOCUS · BLUR · STYLE</span></nav>
+      <nav class="exercise-nav" aria-label="Chuyển bài"><a href="../Exercise06/index.html">← Bài 06</a><span>BÀI 07 / 08</span><a href="../Exercise08/index.html">Bài 08 →</a></nav>
+    </section>
+    <section class="demo-card lesson-demo" id="demo-9-7" data-testid="lab09-ex07-demo" aria-labelledby="demo-heading-7">
+      <div class="demo-card-header"><div><p class="eyebrow">THỬ NGAY TRÊN TRANG</p><h2 id="demo-heading-7">Phòng thực hành</h2></div><span class="topic-tag">FOCUS · BLUR · STYLE</span></div>
+      <div class="demo-grid">
+  <div class="demo-controls">
+    <label for="name-field">Tên hiển thị</label>
+    <input id="name-field" type="text" placeholder="Ví dụ: Minh Anh" autocomplete="name" data-testid="lab09-ex07-text-input">
+    <label for="password-field">Mật khẩu minh họa</label>
+    <input id="password-field" type="password" placeholder="Nhập một mật khẩu bất kỳ" autocomplete="new-password" data-testid="lab09-ex07-password-input">
+  </div>
+  <div class="focus-panel">
+    <p class="eyebrow">Quan sát trạng thái</p>
+    <p class="focus-status" id="focus-status" aria-live="polite" data-testid="lab09-ex07-output">Nhấn Tab hoặc chọn một ô để bắt đầu.</p>
+    <p class="body-copy">Sự kiện focus và blur dùng được cho cả thao tác chuột lẫn bàn phím.</p>
+  </div>
+</div>
+    </section>
+    <details class="code-panel">
+      <summary><span>Đọc mã nguồn</span><span class="summary-hint">Ví dụ ngắn, có chú thích</span></summary>
+      <pre><code>for (const field of fields) {
+  field.addEventListener("focus", () =&gt; {
+    field.style.backgroundColor = "#fff2a8";
+  });
+  field.addEventListener("blur", () =&gt; {
+    field.style.backgroundColor = "#ffffff";
+  });
+}</code></pre>
+    </details>
+  </main>
+  <footer class="site-footer"><span>JavaScript Labs <span aria-hidden="true">·</span> Lab 09</span><a href="../index.html">Trở lại danh sách bài học ↑</a></footer>
+</body>
+</html>

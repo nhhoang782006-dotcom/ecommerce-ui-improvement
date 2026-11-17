@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bài thực hành 9.6: Gỡ lỗi sự kiện rê chuột trong khóa JavaScript Labs.">
+  <title>9.6 · Gỡ lỗi sự kiện rê chuột | JavaScript Labs</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+  <link rel="stylesheet" href="../lab09.css">
+  <script defer src="../../assets/site.js"></script>
+  <script defer src="script.js"></script>
+
+</head>
+<body class="lab09"><a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>JavaScript <strong>Labs</strong></span></a>
+    <nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html" aria-current="page">Lab 09</a></nav>
+  </header>
+  <main id="main-content" class="page-wrap" data-exercise="9-6">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab 09</a><span aria-hidden="true">/</span><span aria-current="page">Bài 9.6</span></nav>
+    <section class="lesson-intro">
+      <p class="eyebrow">LAB 09 <span aria-hidden="true">/</span> BÀI 9.6</p>
+      <h1 class="page-title">Gỡ lỗi sự kiện rê chuột</h1>
+      <p class="lead">Dùng DevTools để đặt breakpoint, chạy từng bước và theo dõi e.target.id khi rê chuột qua các vùng.</p>
+      <nav class="lab-nav" aria-label="Thông tin bài học"><a href="../index.html">← Tổng quan Lab 09</a><span>Thực hành tương tác · DEVTOOLS · DEBUGGER · EVENT TARGET</span></nav>
+      <nav class="exercise-nav" aria-label="Chuyển bài"><a href="../Exercise05/index.html">← Bài 05</a><span>BÀI 06 / 08</span><a href="../Exercise07/index.html">Bài 07 →</a></nav>
+    </section>
+    <section class="demo-card lesson-demo" id="demo-9-6" data-testid="lab09-ex06-demo" aria-labelledby="demo-heading-6">
+      <div class="demo-card-header"><div><p class="eyebrow">THỬ NGAY TRÊN TRANG</p><h2 id="demo-heading-6">Phòng thực hành</h2></div><span class="topic-tag">DEVTOOLS · DEBUGGER · EVENT TARGET</span></div>
+      <div class="demo-controls debug-controls">
+  <label class="check-row" for="enable-breakpoint"><input id="enable-breakpoint" type="checkbox" data-testid="lab09-ex06-debug-toggle"> Dừng tại lệnh debugger khi rê chuột</label>
+  <p class="body-copy">Mở DevTools trước khi bật điểm dừng. Rê chuột qua từng thẻ để xem e.target.id và thử Step over / Watch.</p>
+  <div class="demo-output" id="debug-output" aria-live="polite" data-testid="lab09-ex06-output">Chưa có vùng nào được chọn.</div>
+</div>
+<div class="inspect-grid" id="inspect-grid" aria-label="Các vùng theo dõi sự kiện">
+  <button class="inspect-box" id="box-coral" type="button" data-inspect-box>Vùng A<span>id: box-coral</span></button>
+  <button class="inspect-box" id="box-mint" type="button" data-inspect-box>Vùng B<span>id: box-mint</span></button>
+  <button class="inspect-box" id="box-blue" type="button" data-inspect-box>Vùng C<span>id: box-blue</span></button>
+</div>
+    </section>
+    <details class="code-panel">
+      <summary><span>Đọc mã nguồn</span><span class="summary-hint">Ví dụ ngắn, có chú thích</span></summary>
+      <pre><code>grid.addEventListener("mouseover", (e) =&gt; {
+  const box = e.target.closest("[data-inspect-box]");
+  if (!box) return;
+  const id = e.target.id; // thêm biến này vào Watch
+  if (breakpoint.checked) debugger;
+  output.textContent = `e.target.id = ${id}`;
+});</code></pre>
+    </details>
+  </main>
+  <footer class="site-footer"><span>JavaScript Labs <span aria-hidden="true">·</span> Lab 09</span><a href="../index.html">Trở lại danh sách bài học ↑</a></footer>
+</body>
+</html>

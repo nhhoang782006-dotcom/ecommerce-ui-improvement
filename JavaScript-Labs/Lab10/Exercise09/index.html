@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tải dữ liệu thành phố Việt Nam và phân biệt thành công với phản hồi sai cấu trúc hoặc lỗi mạng."><title>Bài 10.9 · Tải danh sách thành phố bằng $.get | Xưởng JavaScript</title>
+<link rel="stylesheet" href="../../assets/site.css"><link rel="stylesheet" href="../lab10.css"><script defer src="../../assets/site.js"></script>
+<script defer src="../jquery-loader.js" data-exercise-script="script.js"></script></head>
+<body><a class="skip-link" href="#main-content">Đến nội dung chính</a><header class="site-header"><a class="brand" href="../../index.html" aria-label="Xưởng JavaScript, trang tổng quan"><span class="brand-mark" aria-hidden="true">JS</span><span>Xưởng JavaScript</span></a><nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan</a><a href="../index.html" aria-current="page">Lab 10 · jQuery</a></nav></header>
+<main id="main-content" class="page-wrap" data-exercise="10-9"><nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">JavaScript Labs</a><span aria-hidden="true">/</span><a href="../index.html">Lab 10</a><span aria-hidden="true">/</span><span>Bài 10.9</span></nav>
+<div class="lab10-page-intro"><p class="eyebrow">Lab 10 · bài 10.9</p><h1 class="page-title">Tải danh sách thành phố bằng $.get</h1><p class="lead">Tải dữ liệu thành phố Việt Nam và phân biệt thành công với phản hồi sai cấu trúc hoặc lỗi mạng.</p></div>
+<nav class="lab-nav" aria-label="Các lab"><a href="../../Lab08/index.html">Lab 08</a><a href="../../Lab09/index.html">Lab 09</a><a href="../index.html" aria-current="page">Lab 10</a></nav>
+<nav class="exercise-nav" aria-label="Các bài trong Lab 10"><a href="../Exercise01/index.html">1</a><a href="../Exercise02/index.html">2</a><a href="../Exercise03/index.html">3</a><a href="../Exercise04/index.html">4</a><a href="../Exercise05/index.html">5</a><a href="../Exercise06/index.html">6</a><a href="../Exercise07/index.html">7</a><a href="../Exercise08/index.html">8</a><a href="../Exercise09/index.html" aria-current="page">9</a><a href="../Exercise10/index.html">10</a></nav>
+<section class="lab10-demo-card"><h2>Danh sách thành phố Việt Nam</h2><p>Bản này đổi nguồn API so với bài gốc sang CountriesNow qua HTTPS để chạy trên GitHub Pages; trang không gọi endpoint cũ qua HTTPS. Phản hồi API là mảng chuỗi, được đổi thành đối tượng <code>{ name }</code> trước khi hiển thị.</p><p class="lab10-code-note">Nguồn dữ liệu: <code>countriesnow.space/api/v0.1/countries/cities/q</code>. Không có dữ liệu mẫu dự phòng; lỗi mạng/API sẽ được báo trực tiếp. Yêu cầu bị treo sẽ kết thúc sau 15 giây.</p><div class="lab10-demo-stage" data-api-url="https://countriesnow.space/api/v0.1/countries/cities/q?country=Vietnam" data-timeout-ms="15000"><div class="lab10-controls"><button class="lab10-button" type="button" id="load-cities" data-testid="10-9-load">Tải danh sách</button><span class="lab10-state-pill">Quốc gia: Việt Nam</span></div><p id="city-status" class="lab10-output" role="status" aria-live="polite" data-testid="10-9-city-status">Nhấn tải danh sách để gọi API.</p><ul id="city-list" class="lab10-city-list" aria-label="Danh sách thành phố" data-testid="10-9-city-list"></ul></div></section>
+<section class="code-panel" aria-labelledby="code-title"><p class="eyebrow">Mã nguồn minh họa</p><h2 id="code-title">Ý chính của bài</h2><pre><code>$.get(API_URL, { country: "Vietnam" }, null, "json")
+  .done(function (response) {
+    const cities = response.data.map(function (name) {
+      return { name: name };
+    });
+    renderCities(cities);
+  })
+  .fail(showRequestError);</code></pre><p class="lab10-code-note">Gửi GET đến API HTTPS, xác nhận phản hồi và đổi chuỗi thành đối tượng {name}.</p></section>
+<nav class="lab10-exercise-pager" aria-label="Đi đến bài khác"><a href="../Exercise08/index.html" rel="prev">← Bài 10.8</a><a href="../Exercise10/index.html" rel="next">Bài 10.10 →</a></nav></main>
+<footer class="site-footer"><div class="page-wrap"><p>Xưởng JavaScript · Lab 10 · Bài 10.9</p></div></footer></body></html>

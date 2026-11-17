@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bài thực hành 9.5: Chờ DOM sẵn sàng trong khóa JavaScript Labs.">
+  <title>9.5 · Chờ DOM sẵn sàng | JavaScript Labs</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+  <link rel="stylesheet" href="../lab09.css">
+  <script defer src="../../assets/site.js"></script>
+  <script src="script.js"></script>
+
+</head>
+<body class="lab09"><a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>JavaScript <strong>Labs</strong></span></a>
+    <nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html" aria-current="page">Lab 09</a></nav>
+  </header>
+  <main id="main-content" class="page-wrap" data-exercise="9-5">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab 09</a><span aria-hidden="true">/</span><span aria-current="page">Bài 9.5</span></nav>
+    <section class="lesson-intro">
+      <p class="eyebrow">LAB 09 <span aria-hidden="true">/</span> BÀI 9.5</p>
+      <h1 class="page-title">Chờ DOM sẵn sàng</h1>
+      <p class="lead">Thử lỗi khi script chạy trước phần tử cần tìm, sau đó xem window load giúp truy vấn lại DOM như thế nào.</p>
+      <nav class="lab-nav" aria-label="Thông tin bài học"><a href="../index.html">← Tổng quan Lab 09</a><span>Thực hành tương tác · SCRIPT ORDER · NULL · WINDOW LOAD</span></nav>
+      <nav class="exercise-nav" aria-label="Chuyển bài"><a href="../Exercise04/index.html">← Bài 04</a><span>BÀI 05 / 08</span><a href="../Exercise06/index.html">Bài 06 →</a></nav>
+    </section>
+    <section class="demo-card lesson-demo" id="demo-9-5" data-testid="lab09-ex05-demo" aria-labelledby="demo-heading-5">
+      <div class="demo-card-header"><div><p class="eyebrow">THỬ NGAY TRÊN TRANG</p><h2 id="demo-heading-5">Phòng thực hành</h2></div><span class="topic-tag">SCRIPT ORDER · NULL · WINDOW LOAD</span></div>
+      <div class="demo-grid">
+  <div class="demo-controls">
+    <p class="body-copy">Một script ở đầu trang lưu kết quả truy vấn khi phần tử chưa được trình duyệt tạo. Chọn nút để tái hiện thao tác lỗi; trang vẫn hoạt động bình thường.</p>
+    <button class="button" id="run-early-code" type="button" data-testid="lab09-ex05-error-button">Mô phỏng truy cập quá sớm</button>
+    <div class="demo-output" id="load-output" role="status" aria-live="polite" data-testid="lab09-ex05-output">Đang chờ sự kiện load để áp dụng cách sửa.</div>
+  </div>
+  <div class="sample-card load-card">
+    <p class="eyebrow">Phần tử trong DOM</p>
+    <h3 class="card-title" id="loaded-target">Nội dung chờ DOM</h3>
+    <p class="card-copy">Khi trang tải xong, listener sẽ tìm phần tử rồi cập nhật dòng tiêu đề.</p>
+  </div>
+</div>
+    </section>
+    <details class="code-panel">
+      <summary><span>Đọc mã nguồn</span><span class="summary-hint">Ví dụ ngắn, có chú thích</span></summary>
+      <pre><code>// Cách lỗi: script chạy trước thẻ có id="message".
+const message = document.querySelector("#message");
+message.innerText = "Xin chào"; // message đang là null
+
+// Cách sửa: truy vấn khi tài liệu đã tải xong.
+window.addEventListener("load", () =&gt; {
+  const readyMessage = document.querySelector("#message");
+  readyMessage.innerText = "DOM đã sẵn sàng";
+});</code></pre>
+    </details>
+  </main>
+  <footer class="site-footer"><span>JavaScript Labs <span aria-hidden="true">·</span> Lab 09</span><a href="../index.html">Trở lại danh sách bài học ↑</a></footer>
+</body>
+</html>

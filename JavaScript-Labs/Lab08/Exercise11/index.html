@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Truy cập thuộc tính đối tượng bằng dấu chấm, ngoặc vuông và lặp qua dữ liệu quốc gia.">
+  <title>8.11 · Dữ liệu quốc gia</title>
+  <link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script><script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header"><a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>Learning log <small>2026 · TMĐT</small></span></a><nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html">Lab08</a></nav></header>
+  <main id="main-content" class="page-wrap" data-exercise="8-11">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab08</a><span aria-hidden="true">/</span><span>8.11</span></nav>
+    <p class="eyebrow">BÀI 8.11 · ĐỌC THUỘC TÍNH ĐỘNG</p><h1 class="page-title">Dữ liệu quốc gia</h1>
+    <p class="lead">Đọc thuộc tính bằng dấu chấm và ngoặc vuông, tạo khóa động rồi dùng <code>for…in</code> để hiển thị các thẻ quốc gia.</p>
+    <nav class="lab-nav" aria-label="Điều hướng phòng lab"><a href="../index.html">← Danh sách Lab08</a><span>Đối tượng · for…in</span></nav>
+    <nav class="exercise-nav" aria-label="Điều hướng bài tập"><a href="../Exercise10/index.html">← Bài 8.10</a><a href="../index.html">Trở lại Lab08 ↑</a></nav>
+    <section class="demo-card" aria-labelledby="lookup-title">
+      <p class="eyebrow">DOT, BRACKET VÀ KHÓA ĐỘNG</p><h2 id="lookup-title">Truy cập một thuộc tính</h2>
+      <label for="country-select">Chọn mã quốc gia</label>
+      <select id="country-select" data-testid="country-select"><option value="vietnam">VN · Việt Nam</option><option value="japan">JP · Nhật Bản</option><option value="france">FR · Pháp</option><option value="australia">AU · Úc</option></select>
+      <div id="lookup-output" class="demo-output" data-testid="lookup-output" aria-live="polite"></div>
+    </section>
+    <section class="demo-card" aria-labelledby="country-list-title">
+      <p class="eyebrow">VÒNG LẶP FOR…IN</p><h2 id="country-list-title">Thẻ quốc gia</h2>
+      <div id="country-cards" class="demo-output" data-testid="country-cards" aria-live="polite"></div>
+    </section>
+    <section class="code-panel"><h2>Ghi chú dữ liệu</h2><p>Dữ liệu dân số làm tròn, chỉ dùng để minh họa cấu trúc object và cách duyệt thuộc tính; số liệu có thể thay đổi theo nguồn và thời điểm.</p></section>
+  </main>
+  <footer class="site-footer"><p>Lab08 · Bài 8.11</p><p><a href="../index.html">Về danh sách bài tập</a></p></footer>
+</body>
+</html>

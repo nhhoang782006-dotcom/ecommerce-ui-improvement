@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thực hành hàm ghi và trả HTML, tham số, vòng lặp, phạm vi toàn cục và cục bộ.">
+  <title>8.8 · Hàm, phạm vi và outputBox</title>
+  <link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script><script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header"><a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>Learning log <small>2026 · TMĐT</small></span></a><nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html">Lab08</a></nav></header>
+  <main id="main-content" class="page-wrap" data-exercise="8-8">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab08</a><span aria-hidden="true">/</span><span>8.8</span></nav>
+    <p class="eyebrow">BÀI 8.8 · HÀM VÀ PHẠM VI</p><h1 class="page-title">Hàm outputBox và phạm vi biến</h1>
+    <p class="lead">Một hàm có thể cập nhật trang trực tiếp hoặc trả về HTML để nơi gọi quyết định cách dùng. Tham số giúp cùng một hàm tạo nhiều kết quả.</p>
+    <nav class="lab-nav" aria-label="Điều hướng phòng lab"><a href="../index.html">← Danh sách Lab08</a><span>Hàm · tham số · scope</span></nav>
+    <nav class="exercise-nav" aria-label="Điều hướng bài tập"><a href="../Exercise07/index.html">← Bài 8.7</a><a href="../Exercise09/index.html">Bài tiếp theo: 8.9 →</a></nav>
+    <section class="demo-card" aria-labelledby="outputbox-title">
+      <p class="eyebrow">BA CÁCH DÙNG HÀM</p><h2 id="outputbox-title">Tạo năm hộp nội dung</h2>
+      <p>Ví dụ chạy ngay khi tải trang: hàm đầu tiên ghi vào hộp, hàm tiếp theo trả về chuỗi HTML, sau đó tham số <code>num</code> tạo năm hộp.</p>
+      <div id="output-box" class="demo-output" data-testid="output-box" aria-live="polite">Đang chuẩn bị nội dung…</div>
+      <p><button type="button" id="run-output" data-testid="run-output">Chạy lại ví dụ</button></p>
+    </section>
+    <section class="demo-card" aria-labelledby="scope-title">
+      <p class="eyebrow">BIẾN TOÀN CỤC VÀ CỤC BỘ</p><h2 id="scope-title">Quan sát phạm vi</h2>
+      <p id="scope-output" class="demo-output" data-testid="scope-output" aria-live="polite">Đang đọc biến trong và ngoài hàm…</p>
+      <p><button type="button" id="scope-error" data-testid="scope-error">Thử đọc biến cục bộ bên ngoài hàm</button></p>
+      <p id="scope-error-output" class="demo-output" data-testid="scope-error-output" aria-live="polite">Ví dụ phạm vi lỗi chưa chạy.</p>
+    </section>
+    <section class="code-panel"><h2>Giới hạn phạm vi</h2><p>Biến toàn cục ở ví dụ này có thể được đọc trong hàm. Biến khai báo bên trong hàm chỉ tồn tại trong hàm đó; nút lỗi bắt lỗi tham chiếu để trang không bị dừng.</p></section>
+  </main>
+  <footer class="site-footer"><p>Lab08 · Bài 8.8</p><p><a href="../index.html">Về danh sách bài tập</a></p></footer>
+</body>
+</html>

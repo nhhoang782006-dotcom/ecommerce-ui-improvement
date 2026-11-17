@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="So sánh alert được gọi từ thuộc tính inline và script nhúng.">
+  <title>8.2 · Alert Hello World!</title>
+  <link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script><script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header"><a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>Learning log <small>2026 · TMĐT</small></span></a><nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html">Lab08</a></nav></header>
+  <main id="main-content" class="page-wrap" data-exercise="8-2">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab08</a><span aria-hidden="true">/</span><span>8.2</span></nav>
+    <p class="eyebrow">BÀI 8.2 · HỘP THOẠI</p><h1 class="page-title">Hello World! bằng alert</h1>
+    <p class="lead">Cùng một hộp thoại có thể được gọi từ thuộc tính sự kiện viết trực tiếp trong HTML hoặc từ script nhúng trong trang.</p>
+    <nav class="lab-nav" aria-label="Điều hướng phòng lab"><a href="../index.html">← Danh sách Lab08</a><span>JavaScript trong trang</span></nav>
+    <nav class="exercise-nav" aria-label="Điều hướng bài tập"><a href="../Exercise01/index.html">← Bài 8.1</a><a href="../Exercise03/index.html">Bài tiếp theo: 8.3 →</a></nav>
+    <section class="demo-card" aria-labelledby="alert-title">
+      <p class="eyebrow">CHỌN CÁCH THỰC THI</p><h2 id="alert-title">Mở hộp thoại mẫu</h2>
+      <p>Trình duyệt sẽ chặn tương tác trang cho đến khi bạn đóng hộp thoại.</p>
+      <p><button type="button" onclick="alert('Hello World!')" data-testid="inline-alert">Chạy alert inline</button>
+      <button type="button" id="embedded-alert" data-testid="embedded-alert">Chạy alert nhúng</button></p>
+      <p class="demo-output" id="alert-status" data-testid="alert-status" aria-live="polite">Chưa chạy hộp thoại nào.</p>
+    </section>
+    <section class="code-panel"><h2>Khác nhau ở đâu?</h2><p>Nút thứ nhất gọi <code>alert()</code> ngay trong thuộc tính <code>onclick</code>. Nút thứ hai giữ HTML gọn hơn; script nhúng đăng ký xử lý bằng <code>addEventListener()</code>.</p></section>
+  </main>
+  <footer class="site-footer"><p>Lab08 · Bài 8.2</p><p><a href="../index.html">Về danh sách bài tập</a></p></footer>
+</body>
+</html>

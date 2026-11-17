@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thực hành tệp JavaScript trong thư mục con, kiểm tra biến và xem log, cảnh báo, lỗi được bắt an toàn.">
+  <title>8.5 · Đường dẫn, biến và console</title>
+  <link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script><script defer src="js/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header"><a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>Learning log <small>2026 · TMĐT</small></span></a><nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html">Lab08</a></nav></header>
+  <main id="main-content" class="page-wrap" data-exercise="8-5">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab08</a><span aria-hidden="true">/</span><span>8.5</span></nav>
+    <p class="eyebrow">BÀI 8.5 · TỔ CHỨC VÀ GỠ LỖI</p><h1 class="page-title">Đường dẫn, biến và console</h1>
+    <p class="lead">Script của bài nằm trong thư mục <code>js/</code>. Quan sát giá trị biến trước, thử lỗi đánh máy có kiểm soát, rồi chạy lại với tên biến đúng.</p>
+    <nav class="lab-nav" aria-label="Điều hướng phòng lab"><a href="../index.html">← Danh sách Lab08</a><span>Script trong thư mục js/</span></nav>
+    <nav class="exercise-nav" aria-label="Điều hướng bài tập"><a href="../Exercise04/index.html">← Bài 8.4</a><a href="../Exercise06/index.html">Bài tiếp theo: 8.6 →</a></nav>
+    <section class="demo-card" aria-labelledby="inspect-title">
+      <p class="eyebrow">KIỂM TRA GIÁ TRỊ</p><h2 id="inspect-title">Biến count, output và temp</h2>
+      <p class="demo-output" id="inspect-result" data-testid="inspect-output" aria-live="polite">Đang đọc giá trị…</p>
+      <p><button type="button" id="show-log" data-testid="log-warning">Ghi log và cảnh báo</button>
+      <button type="button" id="show-error" data-testid="intentional-error">Kích hoạt lỗi đánh máy</button>
+      <button type="button" id="show-fixed" data-testid="fixed-example">Chạy phiên bản đã sửa</button></p>
+      <p id="error-result" class="demo-output" data-testid="error-output" aria-live="polite">Ví dụ lỗi chưa chạy.</p>
+    </section>
+    <section class="code-panel"><h2>Lỗi được cô lập</h2><p>Ví dụ sai dùng <code>temprature</code> thay vì <code>temperature</code>. Nút lỗi bắt <code>ReferenceError</code> trong <code>try…catch</code> và ghi vào console, nên trang vẫn dùng bình thường. Mở DevTools → Console để xem <code>console.log()</code>, <code>console.warn()</code> và <code>console.error()</code>.</p><p>Đường dẫn script: <code>js/script.js</code></p></section>
+  </main>
+  <footer class="site-footer"><p>Lab08 · Bài 8.5</p><p><a href="../index.html">Về danh sách bài tập</a></p></footer>
+</body>
+</html>

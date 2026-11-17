@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bài thực hành 9.4: Phản hồi với sự kiện chuột trong khóa JavaScript Labs.">
+  <title>9.4 · Phản hồi với sự kiện chuột | JavaScript Labs</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+  <link rel="stylesheet" href="../lab09.css">
+  <script defer src="../../assets/site.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+#demo-9-4 .transition-copy { max-height: 8rem; overflow: hidden; opacity: 1; transform: translateY(0); transition: max-height 280ms ease, opacity 240ms ease, transform 240ms ease; }
+#demo-9-4 .transition-copy.is-hiding { max-height: 0; opacity: 0; transform: translateY(-5px); }
+#demo-9-4 .transition-copy[hidden] { display: none; }
+#demo-9-4 .hover-image { display: block; width: min(100%, 24rem); height: auto; transition: filter 180ms ease; }
+@media (prefers-reduced-motion: reduce) { #demo-9-4 .transition-copy, #demo-9-4 .hover-image { transition-duration: 0.01ms; } }
+</style>
+</head>
+<body class="lab09"><a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>JavaScript <strong>Labs</strong></span></a>
+    <nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html" aria-current="page">Lab 09</a></nav>
+  </header>
+  <main id="main-content" class="page-wrap" data-exercise="9-4">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab 09</a><span aria-hidden="true">/</span><span aria-current="page">Bài 9.4</span></nav>
+    <section class="lesson-intro">
+      <p class="eyebrow">LAB 09 <span aria-hidden="true">/</span> BÀI 9.4</p>
+      <h1 class="page-title">Phản hồi với sự kiện chuột</h1>
+      <p class="lead">Gắn click listener, đổi ảnh khi rê chuột và ẩn hoặc hiện đoạn văn với chuyển động CSS ngắn.</p>
+      <nav class="lab-nav" aria-label="Thông tin bài học"><a href="../index.html">← Tổng quan Lab 09</a><span>Thực hành tương tác · CLICK · MOUSEOVER · MOUSEOUT · SET TIMEOUT</span></nav>
+      <nav class="exercise-nav" aria-label="Chuyển bài"><a href="../Exercise03/index.html">← Bài 03</a><span>BÀI 04 / 08</span><a href="../Exercise05/index.html">Bài 05 →</a></nav>
+    </section>
+    <section class="demo-card lesson-demo" id="demo-9-4" data-testid="lab09-ex04-demo" aria-labelledby="demo-heading-4">
+      <div class="demo-card-header"><div><p class="eyebrow">THỬ NGAY TRÊN TRANG</p><h2 id="demo-heading-4">Phòng thực hành</h2></div><span class="topic-tag">CLICK · MOUSEOVER · MOUSEOUT · SET TIMEOUT</span></div>
+      <div class="demo-grid">
+  <div class="demo-controls">
+    <button class="button" id="click-counter" type="button" data-testid="lab09-ex04-click-button">Nhấn thử · <span id="click-count">0</span></button>
+    <p class="body-copy">Rê chuột lên ảnh để chuyển sang thang xám. Dùng nút bên dưới để xem đoạn văn ẩn/hiện.</p>
+    <button class="button button-secondary" id="toggle-paragraph" type="button" aria-controls="transition-copy" data-testid="lab09-ex04-toggle-button">Ẩn đoạn văn</button>
+    <div class="demo-output" id="event-status" aria-live="polite" data-testid="lab09-ex04-output">Sẵn sàng nhận sự kiện.</div>
+  </div>
+  <div class="image-panel">
+    <img class="hover-image" id="hover-image" src="../assets/dom-mouse.svg" alt="Minh họa con trỏ chạm vào các nút giao diện">
+    <p class="transition-copy" id="transition-copy">Đoạn văn này chuyển động nhẹ khi bạn ẩn hoặc hiện nội dung.</p>
+  </div>
+</div>
+    </section>
+    <details class="code-panel">
+      <summary><span>Đọc mã nguồn</span><span class="summary-hint">Ví dụ ngắn, có chú thích</span></summary>
+      <pre><code>button.addEventListener("click", () =&gt; count++);
+image.addEventListener("mouseover", () =&gt; image.style.filter = "grayscale(1)");
+image.addEventListener("mouseout", () =&gt; image.style.filter = "grayscale(0)");
+
+paragraph.classList.add("is-hiding");
+setTimeout(() =&gt; paragraph.hidden = true, 300);</code></pre>
+    </details>
+  </main>
+  <footer class="site-footer"><span>JavaScript Labs <span aria-hidden="true">·</span> Lab 09</span><a href="../index.html">Trở lại danh sách bài học ↑</a></footer>
+</body>
+</html>

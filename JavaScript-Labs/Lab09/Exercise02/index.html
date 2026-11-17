@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bài thực hành 9.2: Lần theo các nút trong cây DOM trong khóa JavaScript Labs.">
+  <title>9.2 · Lần theo các nút trong cây DOM | JavaScript Labs</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+  <link rel="stylesheet" href="../lab09.css">
+  <script defer src="../../assets/site.js"></script>
+  <script defer src="script.js"></script>
+  <style>
+#demo-9-2 li.is-non-text { color: #287763; font-weight: 650; }
+#demo-9-2 .non-text-label { color: #287763; }
+#demo-9-2 .node-row { margin: 0.35rem 0; }
+</style>
+</head>
+<body class="lab09"><a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>JavaScript <strong>Labs</strong></span></a>
+    <nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html" aria-current="page">Lab 09</a></nav>
+  </header>
+  <main id="main-content" class="page-wrap" data-exercise="9-2">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab 09</a><span aria-hidden="true">/</span><span aria-current="page">Bài 9.2</span></nav>
+    <section class="lesson-intro">
+      <p class="eyebrow">LAB 09 <span aria-hidden="true">/</span> BÀI 9.2</p>
+      <h1 class="page-title">Lần theo các nút trong cây DOM</h1>
+      <p class="lead">Quan sát khoảng trắng tạo thành nút văn bản, nhận diện nodeType và đi từ một nút sang nút cha hoặc nút kế tiếp.</p>
+      <nav class="lab-nav" aria-label="Thông tin bài học"><a href="../index.html">← Tổng quan Lab 09</a><span>Thực hành tương tác · FIRST CHILD · NEXT SIBLING · PARENT NODE</span></nav>
+      <nav class="exercise-nav" aria-label="Chuyển bài"><a href="../Exercise01/index.html">← Bài 01</a><span>BÀI 02 / 08</span><a href="../Exercise03/index.html">Bài 03 →</a></nav>
+    </section>
+    <section class="demo-card lesson-demo" id="demo-9-2" data-testid="lab09-ex02-demo" aria-labelledby="demo-heading-2">
+      <div class="demo-card-header"><div><p class="eyebrow">THỬ NGAY TRÊN TRANG</p><h2 id="demo-heading-2">Phòng thực hành</h2></div><span class="topic-tag">FIRST CHILD · NEXT SIBLING · PARENT NODE</span></div>
+      <div class="demo-grid">
+  <div class="demo-controls">
+    <p class="body-copy">Cây bên phải có xuống dòng, thụt lề và một ghi chú HTML. Chọn nút để liệt kê các nút con theo đúng thứ tự.</p>
+    <button class="button" id="walk-nodes" type="button" data-testid="lab09-ex02-walk-button">Duyệt childNodes</button>
+    <div class="node-readout" id="node-readout" aria-live="polite" data-testid="lab09-ex02-output">Kết quả sẽ xuất hiện ở đây.</div>
+  </div>
+  <div class="tree-panel" aria-label="Cây DOM mẫu">
+    <ul id="node-list">
+      <li id="node-one">Mục thứ nhất</li>
+      <!-- Ghi chú này cũng là một nút trong DOM. -->
+      <li id="node-two">Mục thứ hai</li>
+    </ul>
+  </div>
+</div>
+    </section>
+    <details class="code-panel">
+      <summary><span>Đọc mã nguồn</span><span class="summary-hint">Ví dụ ngắn, có chú thích</span></summary>
+      <pre><code>const list = root.querySelector("#node-list");
+const first = list.firstChild; // thường là nút văn bản do xuống dòng
+
+for (const node of list.childNodes) {
+  if (node.nodeType !== Node.TEXT_NODE) {
+    console.log("Nút không phải văn bản:", node.nodeName);
+  }
+}
+console.log(first.nextSibling.parentNode === list);</code></pre>
+    </details>
+  </main>
+  <footer class="site-footer"><span>JavaScript Labs <span aria-hidden="true">·</span> Lab 09</span><a href="../index.html">Trở lại danh sách bài học ↑</a></footer>
+</body>
+</html>

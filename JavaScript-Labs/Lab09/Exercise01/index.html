@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bài thực hành 9.1: Truy vấn và thay đổi nội dung trong khóa JavaScript Labs.">
+  <title>9.1 · Truy vấn và thay đổi nội dung | JavaScript Labs</title>
+  <link rel="stylesheet" href="../../assets/site.css">
+  <link rel="stylesheet" href="../lab09.css">
+  <script defer src="../../assets/site.js"></script>
+  <script defer src="script.js"></script>
+
+</head>
+<body class="lab09"><a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header">
+    <a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>JavaScript <strong>Labs</strong></span></a>
+    <nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html" aria-current="page">Lab 09</a></nav>
+  </header>
+  <main id="main-content" class="page-wrap" data-exercise="9-1">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab 09</a><span aria-hidden="true">/</span><span aria-current="page">Bài 9.1</span></nav>
+    <section class="lesson-intro">
+      <p class="eyebrow">LAB 09 <span aria-hidden="true">/</span> BÀI 9.1</p>
+      <h1 class="page-title">Truy vấn và thay đổi nội dung</h1>
+      <p class="lead">Dùng các bộ chọn DOM để tìm đúng phần tử, đọc nội dung trong ô nhập và cập nhật thuộc tính, lớp cùng kiểu hiển thị.</p>
+      <nav class="lab-nav" aria-label="Thông tin bài học"><a href="../index.html">← Tổng quan Lab 09</a><span>Thực hành tương tác · ID · TAG · CLASS · QUERY SELECTOR</span></nav>
+      <nav class="exercise-nav" aria-label="Chuyển bài"><a href="../index.html">← Về Lab 09</a><span>BÀI 01 / 08</span><a href="../Exercise02/index.html">Bài 02 →</a></nav>
+    </section>
+    <section class="demo-card lesson-demo" id="demo-9-1" data-testid="lab09-ex01-demo" aria-labelledby="demo-heading-1">
+      <div class="demo-card-header"><div><p class="eyebrow">THỬ NGAY TRÊN TRANG</p><h2 id="demo-heading-1">Phòng thực hành</h2></div><span class="topic-tag">ID · TAG · CLASS · QUERY SELECTOR</span></div>
+      <div class="demo-grid">
+  <div class="demo-controls">
+    <label for="note-input">Ghi chú mới</label>
+    <textarea id="note-input" rows="3" placeholder="Nhập một câu ngắn để thử .value">DOM giúp trang phản hồi với người dùng.</textarea>
+    <div class="button-row">
+      <button class="button" id="inspect-selectors" type="button" data-testid="lab09-ex01-query-button">Đọc các bộ chọn</button>
+      <button class="button button-secondary" id="update-content" type="button" data-testid="lab09-ex01-update-button">Cập nhật nội dung</button>
+    </div>
+  </div>
+  <article id="selector-card" class="sample-card" title="Thẻ ví dụ ban đầu">
+    <p class="eyebrow">Thẻ được truy vấn</p>
+    <h3 class="card-title">Một ghi chú nhỏ</h3>
+    <p class="card-copy">Các selector cùng trỏ đến phần tử trong phạm vi ví dụ này.</p>
+    <p class="card-copy">Lớp có thể được bật hoặc tắt bằng classList.</p>
+  </article>
+</div>
+<div class="demo-output" id="selector-output" aria-live="polite" data-testid="lab09-ex01-output">Chọn “Đọc các bộ chọn” để xem kết quả; thử nhập ghi chú rồi chọn “Cập nhật nội dung”.</div>
+    </section>
+    <details class="code-panel">
+      <summary><span>Đọc mã nguồn</span><span class="summary-hint">Ví dụ ngắn, có chú thích</span></summary>
+      <pre><code>const root = document.querySelector("#demo-9-1");
+const card = root.querySelector("#selector-card");
+const paragraphs = card.getElementsByTagName("p");
+const copies = card.getElementsByClassName("card-copy");
+const firstCopy = card.querySelector(".card-copy");
+const allCopies = card.querySelectorAll(".card-copy");
+
+card.setAttribute("title", "Đã được cập nhật");
+card.classList.toggle("is-highlighted");
+card.style.borderColor = "#368c78";
+firstCopy.innerHTML = "&lt;strong&gt;Nội dung&lt;/strong&gt; được thay đổi";
+output.innerText = textarea.value;</code></pre>
+    </details>
+  </main>
+  <footer class="site-footer"><span>JavaScript Labs <span aria-hidden="true">·</span> Lab 09</span><a href="../index.html">Trở lại danh sách bài học ↑</a></footer>
+</body>
+</html>

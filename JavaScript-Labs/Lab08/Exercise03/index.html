@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nạp JavaScript ngoài trang, ghi nội dung bằng document.write và so sánh cộng số với nối chuỗi.">
+  <title>8.3 · Script ngoài và document.write</title>
+  <link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header"><a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>Learning log <small>2026 · TMĐT</small></span></a><nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html">Lab08</a></nav></header>
+  <main id="main-content" class="page-wrap" data-exercise="8-3">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab08</a><span aria-hidden="true">/</span><span>8.3</span></nav>
+    <p class="eyebrow">BÀI 8.3 · TỆP JAVASCRIPT RIÊNG</p><h1 class="page-title">Script ngoài và document.write</h1>
+    <p class="lead">Tệp <code>hello.js</code> chạy trong lúc trình duyệt phân tích trang, ghi lời chào và so sánh phép cộng số với phép nối chuỗi.</p>
+    <nav class="lab-nav" aria-label="Điều hướng phòng lab"><a href="../index.html">← Danh sách Lab08</a><span>Liên kết tệp ngoài</span></nav>
+    <nav class="exercise-nav" aria-label="Điều hướng bài tập"><a href="../Exercise02/index.html">← Bài 8.2</a><a href="../Exercise04/index.html">Bài tiếp theo: 8.4 →</a></nav>
+    <section class="demo-card" aria-labelledby="write-title">
+      <p class="eyebrow">KẾT QUẢ ĐƯỢC GHI KHI TẢI TRANG</p><h2 id="write-title">Nội dung từ hello.js</h2>
+      <div class="demo-output" data-testid="document-write-output" aria-live="polite"><script src="hello.js"></script></div>
+      <p>Trong ví dụ này, <code>document.write()</code> chỉ được gọi khi HTML đang được phân tích. Không gọi lại sau khi trang tải xong vì việc đó có thể thay thế toàn bộ tài liệu.</p>
+    </section>
+    <section class="code-panel"><h2>Tệp ngoài</h2><p>Trang liên kết trực tiếp tới <code>hello.js</code>. Trong đó, <code>count</code> bắt đầu bằng số <code>1</code>; cộng số <code>2</code> cho ra <code>3</code>, còn nối chuỗi <code>"2"</code> cho ra <code>"12"</code>.</p></section>
+  </main>
+  <footer class="site-footer"><p>Lab08 · Bài 8.3</p><p><a href="../index.html">Về danh sách bài tập</a></p></footer>
+</body>
+</html>

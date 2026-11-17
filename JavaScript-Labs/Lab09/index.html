@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tám bài thực hành JavaScript về DOM, sự kiện và biểu mẫu.">
+  <title>Lab 09 · Thao tác với DOM | JavaScript Labs</title>
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="lab09.css">
+  <script defer src="../assets/site.js"></script>
+</head>
+<body class="lab09"><a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header">
+    <a class="brand" href="../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>JavaScript <strong>Labs</strong></span></a>
+    <nav class="top-nav" aria-label="Điều hướng chính"><a href="../index.html">Tổng quan khóa học</a><a href="index.html" aria-current="page">Lab 09</a></nav>
+  </header>
+  <main id="main-content" class="page-wrap" data-exercise="9-index">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../index.html">Khóa học</a><span aria-hidden="true">/</span><span aria-current="page">Lab 09</span></nav>
+    <section class="lesson-intro lab-hero">
+      <p class="eyebrow">CHƯƠNG 09 <span aria-hidden="true">/</span> 08 BÀI THỰC HÀNH</p>
+      <h1 class="page-title">Thao tác với <span>DOM</span></h1>
+      <p class="lead">Tìm phần tử, thay đổi nội dung và kết nối các sự kiện để trang web phản hồi theo thao tác của người dùng.</p>
+      <nav class="lab-nav" aria-label="Thông tin chương"><a href="../index.html">← Tất cả các lab</a><span>Ước tính 25 phút · Từ selector đến kiểm tra biểu mẫu</span></nav>
+    </section>
+    <div class="filter-bar">
+      <label for="lab09-search">Tìm theo số bài hoặc chủ đề<input id="lab09-search" type="search" data-filter-target="#lab09-exercise-list" data-filter-status="#lab09-search-status" placeholder="Ví dụ: 9.6, DevTools, biểu mẫu" autocomplete="off"></label>
+      <p id="lab09-search-status" class="filter-status" role="status" aria-live="polite"></p>
+    </div>
+    <section class="exercise-list" id="lab09-exercise-list" aria-labelledby="exercise-list-heading">
+      <div class="section-heading"><div><p class="eyebrow">LỘ TRÌNH THỰC HÀNH</p><h2 id="exercise-list-heading">Chọn một bài để bắt đầu</h2></div><span>9.1 — 9.8</span></div>
+      <a class="exercise-card" href="Exercise01/index.html" data-testid="lab09-index-ex01" data-filter-item data-search-text="9.1 dom selectors noi dung">
+  <span class="exercise-number">9.1</span>
+  <span class="exercise-card-copy"><strong>Truy vấn và thay đổi nội dung</strong><span>Dùng các bộ chọn DOM để tìm đúng phần tử, đọc nội dung trong ô nhập và cập nhật thuộc tính, lớp cùng kiểu hiển thị.</span></span>
+  <span class="exercise-arrow" aria-hidden="true">↗</span>
+</a><a class="exercise-card" href="Exercise02/index.html" data-testid="lab09-index-ex02" data-filter-item data-search-text="9.2 dom tree node cay">
+  <span class="exercise-number">9.2</span>
+  <span class="exercise-card-copy"><strong>Lần theo các nút trong cây DOM</strong><span>Quan sát khoảng trắng tạo thành nút văn bản, nhận diện nodeType và đi từ một nút sang nút cha hoặc nút kế tiếp.</span></span>
+  <span class="exercise-arrow" aria-hidden="true">↗</span>
+</a><a class="exercise-card" href="Exercise03/index.html" data-testid="lab09-index-ex03" data-filter-item data-search-text="9.3 tao go bo phan tu">
+  <span class="exercise-number">9.3</span>
+  <span class="exercise-card-copy"><strong>Tạo và gỡ phần tử</strong><span>Tạo một đoạn văn từ nội dung nhập, thêm mục mới vào danh sách và gỡ mục cuối bằng các thao tác DOM cơ bản.</span></span>
+  <span class="exercise-arrow" aria-hidden="true">↗</span>
+</a><a class="exercise-card" href="Exercise04/index.html" data-testid="lab09-index-ex04" data-filter-item data-search-text="9.4 su kien chuot mouse">
+  <span class="exercise-number">9.4</span>
+  <span class="exercise-card-copy"><strong>Phản hồi với sự kiện chuột</strong><span>Gắn click listener, đổi ảnh khi rê chuột và ẩn hoặc hiện đoạn văn với chuyển động CSS ngắn.</span></span>
+  <span class="exercise-arrow" aria-hidden="true">↗</span>
+</a><a class="exercise-card" href="Exercise05/index.html" data-testid="lab09-index-ex05" data-filter-item data-search-text="9.5 dom ready load">
+  <span class="exercise-number">9.5</span>
+  <span class="exercise-card-copy"><strong>Chờ DOM sẵn sàng</strong><span>Thử lỗi khi script chạy trước phần tử cần tìm, sau đó xem window load giúp truy vấn lại DOM như thế nào.</span></span>
+  <span class="exercise-arrow" aria-hidden="true">↗</span>
+</a><a class="exercise-card" href="Exercise06/index.html" data-testid="lab09-index-ex06" data-filter-item data-search-text="9.6 debug debugger devtools hover">
+  <span class="exercise-number">9.6</span>
+  <span class="exercise-card-copy"><strong>Gỡ lỗi sự kiện rê chuột</strong><span>Dùng DevTools để đặt breakpoint, chạy từng bước và theo dõi e.target.id khi rê chuột qua các vùng.</span></span>
+  <span class="exercise-arrow" aria-hidden="true">↗</span>
+</a><a class="exercise-card" href="Exercise07/index.html" data-testid="lab09-index-ex07" data-filter-item data-search-text="9.7 focus blur mau">
+  <span class="exercise-number">9.7</span>
+  <span class="exercise-card-copy"><strong>Đổi màu khi focus và blur</strong><span>Theo dõi focus và blur trên ô văn bản cùng ô mật khẩu; nền vàng báo đang nhập, nền trắng báo đã rời ô.</span></span>
+  <span class="exercise-arrow" aria-hidden="true">↗</span>
+</a><a class="exercise-card" href="Exercise08/index.html" data-testid="lab09-index-ex08" data-filter-item data-search-text="9.8 form bieu mau validation email">
+  <span class="exercise-number">9.8</span>
+  <span class="exercise-card-copy"><strong>Kiểm tra biểu mẫu trước khi gửi</strong><span>Ngăn gửi khi còn thiếu thông tin, thông báo trường cần bổ sung và hiển thị lỗi ngay dưới biểu mẫu.</span></span>
+  <span class="exercise-arrow" aria-hidden="true">↗</span>
+</a>
+    </section>
+  </main>
+  <footer class="site-footer"><span>JavaScript Labs <span aria-hidden="true">·</span> Lab 09</span><a href="../index.html">Về tổng quan khóa học ↑</a></footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dùng mảng, điều kiện và vòng lặp để dựng danh sách thứ và lịch 30 ngày.">
+  <title>8.7 · Mảng, điều kiện và lịch</title>
+  <link rel="stylesheet" href="../../assets/site.css"><script defer src="../../assets/site.js"></script><script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Đến nội dung chính</a>
+  <header class="site-header"><a class="brand" href="../../index.html" aria-label="JavaScript Labs, trang chủ"><span class="brand-mark" aria-hidden="true">JS</span><span>Learning log <small>2026 · TMĐT</small></span></a><nav class="top-nav" aria-label="Điều hướng chính"><a href="../../index.html">Tổng quan khóa học</a><a href="../index.html">Lab08</a></nav></header>
+  <main id="main-content" class="page-wrap" data-exercise="8-7">
+    <nav class="breadcrumbs" aria-label="Đường dẫn"><a href="../../index.html">Khóa học</a><span aria-hidden="true">/</span><a href="../index.html">Lab08</a><span aria-hidden="true">/</span><span>8.7</span></nav>
+    <p class="eyebrow">BÀI 8.7 · MẢNG VÀ VÒNG LẶP</p><h1 class="page-title">Xây lịch từ một mảng</h1>
+    <p class="lead">Tạo danh sách ngày làm việc, thêm cuối tuần bằng <code>push()</code> và <code>unshift()</code>, rồi dùng điều kiện để đánh dấu thứ Ba và thứ Năm.</p>
+    <nav class="lab-nav" aria-label="Điều hướng phòng lab"><a href="../index.html">← Danh sách Lab08</a><span>Mảng · điều kiện · vòng lặp</span></nav>
+    <nav class="exercise-nav" aria-label="Điều hướng bài tập"><a href="../Exercise06/index.html">← Bài 8.6</a><a href="../Exercise08/index.html">Bài tiếp theo: 8.8 →</a></nav>
+    <section class="demo-card" aria-labelledby="week-title">
+      <p class="eyebrow">ARRAY METHODS</p><h2 id="week-title">Tuần đầy đủ</h2>
+      <p>Khởi điểm: thứ Hai đến thứ Sáu. Sau đó thêm thứ Bảy vào cuối và Chủ nhật vào đầu.</p>
+      <div id="week-output" class="demo-output" data-testid="week-output" aria-live="polite"></div>
+    </section>
+    <section class="demo-card" aria-labelledby="calendar-title">
+      <p class="eyebrow">VÒNG LẶP FOR VÀ ĐIỀU KIỆN</p><h2 id="calendar-title">Lịch 30 ngày bắt đầu vào Chủ nhật</h2>
+      <p><mark>Thứ Ba</mark> và <mark>Thứ Năm</mark> được tô dấu. Ngày 1 được đặt ở cột Chủ nhật để nhìn rõ phép tính vị trí.</p>
+      <div id="calendar-output" class="demo-output" data-testid="calendar-output" aria-live="polite"></div>
+    </section>
+    <section class="code-panel"><h2>Logic của lịch</h2><p>Vòng lặp ngoài tạo từng hàng tuần; vòng lặp trong xét bảy cột. Với ngày <code>d</code>, cột lịch là <code>(d - 1) % 7</code>. Chỉ cột thứ Ba và thứ Năm được bọc trong thẻ <code>&lt;mark&gt;</code>.</p></section>
+  </main>
+  <footer class="site-footer"><p>Lab08 · Bài 8.7</p><p><a href="../index.html">Về danh sách bài tập</a></p></footer>
+</body>
+</html>
