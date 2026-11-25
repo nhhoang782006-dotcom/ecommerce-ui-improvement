@@ -1,0 +1,21 @@
+button {
+   height: 3em;
+   width: 6em;
+   color: white;
+   font-size: 1.25em;
+   background-color: #146d37;
+   transition-property: background-color;
+   transition-duration: 1s;
+   transition-timing-function: ease-out;
+   transition-delay: 0s;
+}
+
+button:hover,
+button:focus-visible {
+   color: #132314;
+   background-color: #60b946;
+}
+
+@media (prefers-reduced-motion: reduce) {
+   button { transition-duration: 0s; }
+}

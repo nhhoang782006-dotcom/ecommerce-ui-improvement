@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bài thực hành CSS nâng cao của Nguyễn Huy Hoàng, gồm 19 bài Lab 07 và các bản demo chạy trực tiếp.">
+  <title>CSS nâng cao – Nguyễn Huy Hoàng</title>
+  <link rel="stylesheet" href="assets/notebook.css">
+</head>
+<body>
+  <a class="skip-link" href="#noi-dung">Bỏ qua điều hướng</a>
+  <header class="masthead">
+    <div class="shell masthead-inner">
+      <a class="brand" href="./" aria-current="page"><span class="brand-mark" aria-hidden="true">{ }</span> CSS nâng cao</a>
+      <nav class="site-nav" aria-label="Điều hướng chính">
+        <a href="Lab07/">Mục lục Lab 07</a>
+        <a href="#kien-thuc">Kiến thức</a>
+        <a href="#tu-danh-gia">Tự đánh giá</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell" id="noi-dung">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Lab 07 · Phát triển ứng dụng TMĐT</p>
+        <h1>CSS nâng cao</h1>
+        <p class="lede">Sổ tay 19 bài thực hành về bố cục web, từ cách trình duyệt sắp xếp phần tử đến giao diện responsive và hiệu ứng tương tác. Mỗi bài có demo chạy trực tiếp và hướng dẫn quan sát kết quả.</p>
+        <div class="button-row">
+          <a class="button" href="Lab07/">Xem 19 bài thực hành</a>
+          <a href="https://github.com/nhhoang782006-dotcom/ecommerce-ui-improvement">Repository GitHub</a>
+        </div>
+      </div>
+      <section class="profile" aria-labelledby="student-name">
+        <div class="profile-heading">
+          <img src="assets/avatar-nguyen-huy-hoang.svg" width="72" height="72" alt="Ảnh đại diện chữ NH">
+          <h2 id="student-name">Nguyễn Huy Hoàng</h2>
+        </div>
+        <dl>
+          <div><dt>Mã số sinh viên</dt><dd>31241026670</dd></div>
+          <div><dt>Lớp học phần</dt><dd>26C1INF50902702</dd></div>
+        </dl>
+        <a href="https://github.com/nhhoang782006-dotcom">GitHub cá nhân</a>
+      </section>
+    </div>
+
+    <section class="section" aria-labelledby="lab-topics">
+      <h2 id="lab-topics">Các nhóm bài thực hành</h2>
+      <ul class="topics">
+        <li><a href="Lab07/#dong-va-dinh-vi"><span class="range">7.1–7.4</span> Luồng tài liệu và định vị</a></li>
+        <li><a href="Lab07/#float-va-clear"><span class="range">7.5–7.9</span> Float, clear và chú thích ảnh</a></li>
+        <li><a href="Lab07/#bo-cuc-responsive"><span class="range">7.10–7.13</span> Bố cục nhiều cột và responsive</a></li>
+        <li><a href="Lab07/#hieu-ung"><span class="range">7.14–7.18</span> Biến đổi và hiệu ứng CSS</a></li>
+        <li><a href="Lab07/#bootstrap"><span class="range">7.19</span> Bootstrap</a></li>
+      </ul>
+    </section>
+
+    <section class="section" id="kien-thuc" aria-labelledby="skills-title">
+      <h2 id="skills-title">Kiến thức từ Lab 07</h2>
+      <dl class="takeaways">
+        <div>
+          <dt>Luồng tài liệu và lớp chồng</dt>
+          <dd><code>display</code> đổi cách phần tử chiếm dòng. Định vị tương đối giữ chỗ ban đầu, định vị tuyệt đối rời luồng, còn <code>z-index</code> sắp xếp lớp trong ngữ cảnh xếp chồng.</dd>
+        </div>
+        <div>
+          <dt>Float và clear</dt>
+          <dd><code>float</code> cho chữ chạy quanh ảnh. <code>clear</code> có thể bắt đầu một hàng ảnh mới hoặc đẩy đoạn văn xuống dưới nhóm ảnh.</dd>
+        </div>
+        <div>
+          <dt>Bố cục hai và ba cột</dt>
+          <dd>Cột phụ có thể dùng float hoặc định vị tuyệt đối. Phần nội dung chừa lề tương ứng để tạo khoảng trống cho cột phụ.</dd>
+        </div>
+        <div>
+          <dt>Media query và viewport</dt>
+          <dd>Viewport lấy chiều rộng thiết bị. Media query dùng chiều rộng đó để chọn stylesheet và đổi menu giữa danh sách và ô chọn.</dd>
+        </div>
+        <div>
+          <dt>Biến đổi và chuyển động</dt>
+          <dd><code>transform</code> thay đổi hình học, <code>filter</code> thay đổi ảnh, <code>transition</code> nối hai trạng thái và <code>@keyframes</code> đặt các mốc của animation.</dd>
+        </div>
+        <div>
+          <dt>Lưới Bootstrap</dt>
+          <dd>Lưới 12 cột tổ chức danh mục và nội dung. Các lớp dựng sẵn hỗ trợ thanh điều hướng, danh sách, nút và khối giới thiệu.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="section" id="tu-danh-gia" aria-labelledby="reflection-title">
+      <div class="note">
+        <h2 id="reflection-title">Tự đánh giá</h2>
+        <p>Qua Lab 07, em nắm cách CSS thay đổi luồng tài liệu và bố cục qua display, positioning, float và clear. Ở 7.2–7.4, relative giữ lại chỗ cũ, absolute phụ thuộc phần tử tổ tiên có định vị, còn z-index chịu ảnh hưởng của ngữ cảnh xếp chồng. Bài 7.11 làm rõ việc đặt container làm mốc cho hai cột absolute. Ở 7.10–7.13, lề, cột, media query và viewport giúp chuyển từ bố cục desktop sang điều hướng gọn trên điện thoại. Em thực hành transform, transition, filter và animation, đồng thời hoàn tất lưới Bootstrap 3.3.7 với thành phần dựng sẵn. Những kỹ thuật này có thể áp dụng vào trang danh mục sách, menu và thẻ sản phẩm. Khi áp dụng, cần kiểm tra thứ tự lớp, điểm gãy responsive và các đường dẫn tài nguyên ở nhiều kích thước màn hình.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-inner">
+      <p>Lab 07 dựa trên <cite>Fundamentals of Web Development</cite>, ấn bản 2, Pearson.</p>
+      <a href="https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/">GitHub Pages dự kiến</a>
+    </div>
+  </footer>
+</body>
+</html>
