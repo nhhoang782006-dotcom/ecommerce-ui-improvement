@@ -1,0 +1,216 @@
+{
+    "generatedAt":  "2026-11-25T10:45:29.221Z",
+    "baseURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/",
+    "commit":  "dd272360f8c5e88f2e6b54f14238335d489fc8dd",
+    "student":  {
+                    "name":  "Nguyễn Huy Hoàng",
+                    "id":  "31241026670",
+                    "class":  "26C1INF50902702"
+                },
+    "repositoryURL":  "https://github.com/nhhoang782006-dotcom/ecommerce-ui-improvement",
+    "pagesURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/",
+    "portfolioScreenshot":  "portfolio-hero.png",
+    "exercises":  [
+                      {
+                          "number":  1,
+                          "id":  "7.1",
+                          "route":  "Lab07/Exercise01/",
+                          "title":  "Document Flow",
+                          "summary":  "Từ “Travels” trong tiêu đề xuống dòng riêng bằng display: block. Các mục điều hướng chuyển sang inline, còn mỗi ảnh trong phần bài viết chiếm một dòng.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise01.html",
+                          "sourceScreenshot":  "exercise-01-source.png",
+                          "resultScreenshot":  "exercise-01-result.png"
+                      },
+                      {
+                          "number":  2,
+                          "id":  "7.2",
+                          "route":  "Lab07/Exercise02/",
+                          "title":  "Relative Positioning",
+                          "summary":  "figure dùng position: relative với top: 150px và left: 200px. Hộp ảnh dịch xuống và sang phải, còn đoạn văn vẫn bắt đầu sau khoảng trống dành cho ảnh ở vị trí cũ.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise02.html",
+                          "sourceScreenshot":  "exercise-02-source.png",
+                          "resultScreenshot":  "exercise-02-result.png"
+                      },
+                      {
+                          "number":  3,
+                          "id":  "7.3",
+                          "route":  "Lab07/Exercise03/",
+                          "title":  "Absolute Positioning",
+                          "summary":  "figure rời luồng bằng position: absolute, nên đoạn văn lấp chỗ của ảnh. figcaption cũng được định vị tuyệt đối và đo độ lệch từ cạnh của figure.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise03.html",
+                          "sourceScreenshot":  "exercise-03-source.png",
+                          "resultScreenshot":  "exercise-03-result.png"
+                      },
+                      {
+                          "number":  4,
+                          "id":  "7.4",
+                          "route":  "Lab07/Exercise04/",
+                          "title":  "Stacking Using Z-Index",
+                          "summary":  "Ở bước cuối, figure có z-index: -1, còn figcaption có z-index: 1. Cả nhóm ảnh và chú thích nằm dưới đoạn văn vì phần tử cha tạo ngữ cảnh xếp chồng.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise04.html",
+                          "sourceScreenshot":  "exercise-04-source.png",
+                          "resultScreenshot":  "exercise-04-result.png"
+                      },
+                      {
+                          "number":  5,
+                          "id":  "7.5",
+                          "route":  "Lab07/Exercise05/",
+                          "title":  "Floating Elements",
+                          "summary":  "figure rộng 150px và dùng float: right. Đoạn văn chạy phía trái ảnh rồi trở lại toàn chiều ngang ở các dòng phía dưới.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise05.html",
+                          "sourceScreenshot":  "exercise-05-source.png",
+                          "resultScreenshot":  "exercise-05-result.png"
+                      },
+                      {
+                          "number":  6,
+                          "id":  "7.6",
+                          "route":  "Lab07/Exercise06/",
+                          "title":  "Floating in a Container",
+                          "summary":  "figure dùng float: left. Mép của article, cùng phần đệm bên trong, quyết định vị trí ảnh.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise06.html",
+                          "sourceScreenshot":  "exercise-06-source.png",
+                          "resultScreenshot":  "exercise-06-result.png"
+                      },
+                      {
+                          "number":  7,
+                          "id":  "7.7",
+                          "route":  "Lab07/Exercise07/",
+                          "title":  "Floating Multiple Items",
+                          "summary":  "Các figure cùng float: left, nên ảnh sau nằm cạnh ảnh trước khi còn chỗ. Khi bề ngang giảm, chúng xuống hàng và chữ chạy quanh phần ảnh đang nổi.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise07.html",
+                          "sourceScreenshot":  "exercise-07-source.png",
+                          "resultScreenshot":  "exercise-07-result.png"
+                      },
+                      {
+                          "number":  8,
+                          "id":  "7.8",
+                          "route":  "Lab07/Exercise08/",
+                          "title":  "Floating and Clearing",
+                          "summary":  "Lớp .first dùng clear: left trên ảnh British Museum và đoạn văn đầu tiên sau dãy ảnh. Ảnh đó bắt đầu hàng mới, còn đoạn văn nằm dưới các ảnh nổi.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise08.html",
+                          "sourceScreenshot":  "exercise-08-source.png",
+                          "resultScreenshot":  "exercise-08-result.png"
+                      },
+                      {
+                          "number":  9,
+                          "id":  "7.9",
+                          "route":  "Lab07/Exercise09/",
+                          "title":  "Using Positioning",
+                          "summary":  "figure đặt position: relative để làm mốc. Chú thích màu đen bán trong suốt đặt tuyệt đối gần đáy ảnh, còn nhãn New đặt tuyệt đối ở góc trên trái.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise09.html",
+                          "sourceScreenshot":  "exercise-09-source.png",
+                          "resultScreenshot":  "exercise-09-result.png"
+                      },
+                      {
+                          "number":  10,
+                          "id":  "7.10",
+                          "route":  "Lab07/Exercise10/",
+                          "title":  "Two-Column Layout",
+                          "summary":  "nav rộng 10em và nổi sang trái. #main chừa 12em bên trái để duy trì cột nội dung từ đầu đến cuối.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise10.html",
+                          "sourceScreenshot":  "exercise-10-source.png",
+                          "resultScreenshot":  "exercise-10-result.png"
+                      },
+                      {
+                          "number":  11,
+                          "id":  "7.11",
+                          "route":  "Lab07/Exercise11/",
+                          "title":  "Three-Column Layout",
+                          "summary":  "nav neo bên trái, aside neo bên phải. Cả hai dùng position: absolute và lấy #container có position: relative làm mốc. #main chừa 12em hai bên.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise11.html",
+                          "sourceScreenshot":  "exercise-11-source.png",
+                          "resultScreenshot":  "exercise-11-result.png"
+                      },
+                      {
+                          "number":  12,
+                          "id":  "7.12",
+                          "route":  "Lab07/Exercise12/",
+                          "title":  "Media Queries",
+                          "summary":  "Stylesheet desktop áp dụng từ 481px và đặt điều hướng cạnh nội dung. Stylesheet mobile áp dụng đến 480px, bỏ float và lề trái để xếp điều hướng trên nội dung. Ảnh co theo vùng chứa.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise12.html",
+                          "sourceScreenshot":  "exercise-12-source.png",
+                          "resultScreenshot":  "exercise-12-result.png"
+                      },
+                      {
+                          "number":  13,
+                          "id":  "7.13",
+                          "route":  "Lab07/Exercise13/",
+                          "title":  "Setting the Viewport",
+                          "summary":  "Bài này tiếp tục trên HTML và hai stylesheet của 7.12. width=device-width đặt chiều rộng layout viewport theo thiết bị. CSS hiển thị danh sách ul trên desktop và ô chọn select trên mobile.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise12.html",
+                          "sourceScreenshot":  "exercise-13-source.png",
+                          "resultScreenshot":  "exercise-13-result.png"
+                      },
+                      {
+                          "number":  14,
+                          "id":  "7.14",
+                          "route":  "Lab07/Exercise14/",
+                          "title":  "Transforms",
+                          "summary":  "Trạng thái cuối xoay figure 15° và áp dụng rotate(45deg) scale(0.5) cho ảnh. Chú thích xoay theo khung, ảnh nhận thêm phép xoay và thu nhỏ riêng.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise14.html",
+                          "sourceScreenshot":  "exercise-14-source.png",
+                          "resultScreenshot":  "exercise-14-result.png"
+                      },
+                      {
+                          "number":  15,
+                          "id":  "7.15",
+                          "route":  "Lab07/Exercise15/",
+                          "title":  "Transitions",
+                          "summary":  "transition-property chọn background-color. Nền chuyển từ xanh đậm sang xanh sáng trong một giây với ease-out và độ trễ bằng 0.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise15.html",
+                          "sourceScreenshot":  "exercise-15-source.png",
+                          "resultScreenshot":  "exercise-15-result.png"
+                      },
+                      {
+                          "number":  16,
+                          "id":  "7.16",
+                          "route":  "Lab07/Exercise16/",
+                          "title":  "More Transitions",
+                          "summary":  "Khi rê chuột vào ảnh, thẻ đổi nền, màu chữ, bóng và phóng lên 1,75 lần. Trạng thái hover dùng 1s ease-in 0.25s. Quy tắc gốc dùng 0.6s ease-out 0.25s khi trở về.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise16.html",
+                          "sourceScreenshot":  "exercise-16-source.png",
+                          "resultScreenshot":  "exercise-16-result.png"
+                      },
+                      {
+                          "number":  17,
+                          "id":  "7.17",
+                          "route":  "Lab07/Exercise17/",
+                          "title":  "Filters",
+                          "summary":  "Mỗi lớp áp dụng một bộ lọc như saturate, grayscale, contrast, brightness, blur, invert, sepia, hue-rotate hoặc opacity. Hai ảnh cuối kết hợp nhiều hàm trong cùng một filter.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise17.html",
+                          "sourceScreenshot":  "exercise-17-source.png",
+                          "resultScreenshot":  "exercise-17-result.png"
+                      },
+                      {
+                          "number":  18,
+                          "id":  "7.18",
+                          "route":  "Lab07/Exercise18/",
+                          "title":  "Animations",
+                          "summary":  "Hình vuông dùng animation: animTwo 5s ease-out 1s 3. Sau khi chờ một giây, nó đổi màu, vị trí và hình dạng qua các mốc 25%, 50%, 75% và 100%, rồi kết thúc sau ba vòng.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise18.html",
+                          "sourceScreenshot":  "exercise-18-source.png",
+                          "resultScreenshot":  "exercise-18-result.png"
+                      },
+                      {
+                          "number":  19,
+                          "id":  "7.19",
+                          "route":  "Lab07/Exercise19/",
+                          "title":  "Using Bootstrap",
+                          "summary":  "Lưới Bootstrap 3 đi từ thử nghiệm 2 + 7 + 3 đến hai cột 3 + 9 ở kích thước desktop. Bố cục hoàn chỉnh có navbar, panel, list-group, jumbotron, nút và hàng lồng bốn cột có biểu tượng.",
+                          "demoURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/demos/lab07-exercise19.html",
+                          "sourceScreenshot":  "exercise-19-source.png",
+                          "resultScreenshot":  "exercise-19-result.png"
+                      }
+                  ],
+    "reflection":  "Qua Lab 07, em nắm cách CSS thay đổi luồng tài liệu và bố cục qua display, positioning, float và clear. Ở 7.2–7.4, relative giữ lại chỗ cũ, absolute phụ thuộc phần tử tổ tiên có định vị, còn z-index chịu ảnh hưởng của ngữ cảnh xếp chồng. Bài 7.11 làm rõ việc đặt container làm mốc cho hai cột absolute. Ở 7.10–7.13, lề, cột, media query và viewport giúp chuyển từ bố cục desktop sang điều hướng gọn trên điện thoại. Em thực hành transform, transition, filter và animation, đồng thời hoàn tất lưới Bootstrap 3.3.7 với thành phần dựng sẵn. Những kỹ thuật này có thể áp dụng vào trang danh mục sách, menu và thẻ sản phẩm. Khi áp dụng, cần kiểm tra thứ tự lớp, điểm gãy responsive và các đường dẫn tài nguyên ở nhiều kích thước màn hình.",
+    "updatedAt":  "2026-11-25T11:27:04.4403030Z",
+    "corrections":  [
+                        {
+                            "exerciseId":  "7.13",
+                            "file":  "exercise-13-source.png",
+                            "baseURL":  "https://nhhoang782006-dotcom.github.io/ecommerce-ui-improvement/CSS-NangCao/Lab07/Exercise13/",
+                            "viewport":  "900x1800",
+                            "reason":  "Recaptured the expanded live source panel so all three HTML/CSS previews are visible."
+                        }
+                    ]
+}

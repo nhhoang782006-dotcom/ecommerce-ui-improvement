@@ -1,8 +1,8 @@
 ---
 phase: 5
-title: "Publish GitHub Pages"
-status: pending
-effort: "~1 hour"
+title: Publish GitHub Pages
+status: completed
+effort: ~1 hour
 ---
 
 # Phase 5: Publish GitHub Pages
@@ -22,7 +22,7 @@ Commit only the completed CSS coursework slice on the existing public repository
 
 ## Success Criteria
 
-- [ ] The commit contains only planned CSS coursework assets, tests, config, package script and plan documentation.
-- [ ] Redistribution permission is confirmed for textbook material, or copied material is replaced with publishable original work.
-- [ ] The live URL returns 200 and the CSS Playwright suite passes on GitHub Pages.
-- [ ] No pre-existing unrelated file appears in the commit.
+- [x] Commit `dd27236` contains only planned CSS coursework assets, tests, config, package script and CSS plan documentation.
+- [x] The student confirmed existing redistribution permission on 2026-11-25.
+- [x] The live URL returns 200 and the CSS Playwright suite passes on GitHub Pages.
+- [x] No pre-existing unrelated file appears in the commit.

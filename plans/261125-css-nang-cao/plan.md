@@ -4,7 +4,7 @@ description: >-
   Complete the 19 CSS Advanced Lab07 exercises in an accessible learning
   notebook, verify and publish the existing repository section, and deliver a
   Word report with linked repository and Pages URLs plus real evidence.
-status: pending
+status: completed
 priority: P1
 branch: main
 tags:
@@ -32,8 +32,8 @@ Add a self-contained `CSS-NangCao/` area to the existing static coursework site.
 | 2 | [Build All 19 Exercises](./phase-02-build-all-19-exercises.md) | Completed |
 | 3 | [Create CSS Notebook](./phase-03-create-css-notebook.md) | Completed |
 | 4 | [Verify Local Site](./phase-04-verify-local-site.md) | Completed |
-| 5 | [Publish GitHub Pages](./phase-05-publish-github-pages.md) | Pending |
-| 6 | [Create Word Evidence Report](./phase-06-create-word-evidence-report.md) | Pending |
+| 5 | [Publish GitHub Pages](./phase-05-publish-github-pages.md) | Completed |
+| 6 | [Create Word Evidence Report](./phase-06-create-word-evidence-report.md) | Completed |
 
 ## Dependencies
 
@@ -41,9 +41,9 @@ The completed JavaScript Labs section provides established static-site, Playwrig
 
 ## Acceptance Criteria
 
-- [ ] All 19 numbered exercises match Lab07; Exercise 7.13 extends the Exercise 7.12 source.
-- [ ] Existing Bootstrap 3.3.7 assets and relative image paths work; the notebook remains isolated from demo CSS.
-- [ ] The student portfolio, lab navigation, README and 100–150 word reflective summary meet the assignment.
-- [ ] CSS-specific Playwright checks pass locally and on GitHub Pages; existing JavaScript tests pass unchanged.
-- [ ] The report contains real source and browser evidence, and its two external hyperlinks resolve to the repository and CSS Pages section.
-- [ ] Only the CSS coursework and its dedicated test/documentation files are staged and published.
+- [x] All 19 numbered exercises match Lab07; Exercise 7.13 extends the Exercise 7.12 source.
+- [x] Existing Bootstrap 3.3.7 assets and relative image paths work; the notebook remains isolated from demo CSS.
+- [x] The student portfolio, lab navigation, README and 100–150 word reflective summary meet the assignment.
+- [x] CSS-specific Playwright checks pass locally and on GitHub Pages; existing JavaScript tests pass unchanged.
+- [x] The report contains real source and browser evidence, and its two external hyperlinks resolve to the repository and CSS Pages section.
+- [x] Only the CSS coursework and its dedicated test/documentation files are staged and published.

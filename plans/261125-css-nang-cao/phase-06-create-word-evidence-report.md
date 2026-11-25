@@ -1,8 +1,8 @@
 ---
 phase: 6
-title: "Create Word Evidence Report"
-status: pending
-effort: "~2 hours"
+title: Create Word Evidence Report
+status: completed
+effort: ~2 hours
 ---
 
 # Phase 6: Create Word Evidence Report
@@ -21,7 +21,7 @@ Deliver an A4 Vietnamese Word report outside the repository with numbered exerci
 
 ## Success Criteria
 
-- [ ] The Word file exists at the task-workspace root with the required filename.
-- [ ] Each exercise has a relevant actual source screenshot and a browser result screenshot with readable captions.
-- [ ] Repository and CSS Pages links are clickable, verified, and displayed in the student information section.
-- [ ] The final rendered pages are legible, complete, and free of clipped or overlapping content.
+- [x] The Word file exists at the task-workspace root with the required filename.
+- [x] Each exercise has a relevant actual source screenshot and a browser result screenshot with readable captions.
+- [x] Repository and CSS Pages links are clickable, verified, and displayed in the student information section.
+- [x] The final rendered pages are legible, complete, and free of clipped or overlapping report content.
